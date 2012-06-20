@@ -3,7 +3,6 @@
 
 <div id="bottom" >
 
-<?php include (TEMPLATEPATH . '/sponsors.php'); ?>	
 <ul>
 
 <?php if ( !function_exists('dynamic_sidebar')
