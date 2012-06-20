@@ -19,13 +19,13 @@
 define('DB_NAME', 'sudocoda');
 
 /** MySQL database username */
-define('DB_USER', 'sudocoda');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'SuD0cOd@');
+define('DB_PASSWORD', 'n34nyinc*');
 
 /** MySQL hostname */
-define('DB_HOST', 'sudocoda.db.9045916.hostedresource.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

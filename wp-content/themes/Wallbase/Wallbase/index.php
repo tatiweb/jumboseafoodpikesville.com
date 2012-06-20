@@ -57,5 +57,3 @@ if ( has_post_thumbnail() ) { ?>
 </div>	
 
 <?php }  ?>
-
-<?php get_footer(); ?>

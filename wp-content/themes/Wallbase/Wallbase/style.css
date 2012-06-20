@@ -15,9 +15,9 @@ body {
 	margin:0 auto;
 	padding:0px 0px 0px 0px;
 	background:#000;
-	font-family:Arial,Tahoma,Century gothic, sans-serif;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;
 	color:#666;
-	font-size:13px;
+	font-size:12px;
 	}
 	
 img {
@@ -231,14 +231,24 @@ html[xmlns] .clearfix {
 	width:230px;	
 	}
 
-h1.logo{
+h1.logo {
 	font-size:36px;
+	font-variant:small-caps;
+	font-weight:100;
+	text-shadow: -1px -1px 1px #333;
+	text-shadow: 1px 1px 1px #333;
 	}
-h1.logo a:link, h1.logo a:visited{
+	
+h1.logo p:first-letter {
+ font-size : 300%;
+ color: #fff;
+ }
+	
+h1.logo a:link, h1.logo a:visited {
 	color:#fff;
 }
 
-h1.logo a:hover{
+h1.logo a:hover {
 	color:#fff;
 }
 		
@@ -559,7 +569,7 @@ border-bottom:1px solid #191919;
 
 .strigger{
 	height:78px;
-	background:url(images/strigger2.png);
+	background:url(images/koibottom2.png);
 	display:block;
 	border-top:1px solid #302F2F;
 }
@@ -575,7 +585,7 @@ span.trig,span.trigu{
 }
 
 span.trigu{
-	background:url(images/trigu2.png)!important;
+	background:url(images/trigu2-1.png)!important;
 }
 
 
