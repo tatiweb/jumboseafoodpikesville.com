@@ -1,0 +1,13 @@
+[29-Aug-2012 22:01:16] PHP Fatal error:  Uncaught exception 'easyException' with message 'ID must be Integer and > 0; ID: 1bulkArrbulkArr[1]=2bulkArrbulkArr[2]=3' in /home2/jumbosea/public_html/test/wp-content/plugins/easyreservations/lib/classes/reservation.class.php:52
+Stack trace:
+#0 /home2/jumbosea/public_html/test/wp-content/plugins/easyreservations/easyReservations_admin_main.php(77): Reservation->__construct('1bulkArrbulkArr...')
+#1 /home2/jumbosea/public_html/test/wp-includes/plugin.php(403): reservation_main_page('')
+#2 /home2/jumbosea/public_html/test/wp-admin/admin.php(151): do_action('reservation_mai...', Array)
+#3 {main}
+  thrown in /home2/jumbosea/public_html/test/wp-content/plugins/easyreservations/lib/classes/reservation.class.php on line 52
+[30-Aug-2012 00:22:22] WordPress database error Unknown column 'country' in 'field list' for query SELECT id, arrival, departure, name, email, number, childs, room, roomnumber, country, approve, price, custom, customp, reservated FROM js_reservations 
+						WHERE approve='yes'  AND departure > NOW()    ORDER BY arrival ASC LIMIT 0 made by do_action('wp_ajax_easyreservations_send_table'), call_user_func_array, easyreservations_send_table_callback, W3_Db->query
+[28-Sep-2012 15:17:06] PHP Warning:  require_once(library/plugins.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home2/jumbosea/public_html/test/wp-content/themes/wordpress-bootstrap/functions.php on line 13
+[28-Sep-2012 15:17:06] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'library/plugins.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home2/jumbosea/public_html/test/wp-content/themes/wordpress-bootstrap/functions.php on line 13
+[28-Sep-2012 15:17:14] PHP Warning:  require_once(library/plugins.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home2/jumbosea/public_html/test/wp-content/themes/wordpress-bootstrap/functions.php on line 13
+[28-Sep-2012 15:17:14] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'library/plugins.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home2/jumbosea/public_html/test/wp-content/themes/wordpress-bootstrap/functions.php on line 13

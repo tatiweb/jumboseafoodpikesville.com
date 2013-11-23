@@ -1,0 +1,25 @@
+GENERAL: This document is a legal agreement between you, the end user, and Tour De Force font foundry and Fontspring. By using or installing font software, you agree to be bound by the terms of this Agreement. In this document the term “font” refers to any program or piece of code and/ or computer information containing data that can be used to output letterforms or designs to any output or display device currently known or unknown.
+
+ PURPOSE OF USE: You may use Tour De Force fonts(s) both for commercial and non-commercial works.
+
+ NUMBER OF USERS: Strictly limited to number of licenced persons at procedure of buying font(s) from  Fontspring's website.
+
+ BACKUPS: You may make one (1) copy of the Tour De Force font foundry font(s) data solely for backup purposes provided the copyright and trademark notices are reproduced in their entirety on the backup copy.
+
+ THIRD PARTIES: You may send a copy of any Tour De Force font foundry font(s) along with your documents to a commercial printer or other service bureau to enable the editing or printing of your document, provided that such party agrees to delete the font or fonts from his/ her/ their system upon completion of your project.
+
+ PORTABLE DOCUMENTS: You may “embed” Tour De Force font foundry font(s) within PostScript-Language files, .PDF files, and .EVY files for distribution, viewing, and imaging to other parties.
+
+ DISTRIBUTIONS: You may not rent, lease, sublicense, give, lend, or further distribute the font software.
+
+ MODIFICATIONS: You may not modify, adapt, translate, reverse engineer, decompile, disassemble, or create derivative works based on the Tour De Force font foundry font(s) without prior written consent from Tour De Force font foundry.
+
+ COPYRIGHT: Tour De Force font foundry font software data is copyrighted; unauthorized copying Tour De Force font foundry is expressly forbidden. You may be held legally responsible for any infringement of Tour De Force font foundry’s intellectual property rights that is caused or encouraged by your failure to abide by the terms of this Agreement.
+
+ TERMINATION: This Agreement will immediately and automatically terminate without notice if you fail to comply with any term or condition of this Agreement. If this Agreement is terminated, you agreed to destroy all copies of the font data in your possession.
+
+ MULTI-USER LICENSE: You can purchase Multi-user licence through Fontspring at a discounted price.
+
+APP LICENSE: Please contact us for more information about application license.
+
+If you purchase from other foundries, distributors or dealers, please follow their EULA.   EULA can be downloaded from: http://www.tourdefonts.com/eula/TDF_eula.pdf
