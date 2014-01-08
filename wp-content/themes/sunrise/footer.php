@@ -24,18 +24,7 @@
         <!-- end footer -->
 
 		<!-- begin .copyright -->
-		<div class="copyright">
-
-			<?php if(of_get_option('footer_copyright') == '') { ?>
-				<!-- Created by <a href="http://www.s5themes.com/">Site5 WordPress Themes</a>. Experts in <a href="http://gk.site5.com/t/642">WordPress Hosting</a>. -->
-
-				Powered by <a href="http://www.wordpress.org">WordPress</a> | <?php echo array_random(array('Created', 'Coded', 'Built', 'Designed'))?> by  <a href="http://gk.site5.com/t/642"><?php echo array_random(array('Site5 WordPress Themes', 'Site5 WordPress Team', 'S5 WordPress Team', 'S5 WordPress Themes', 'S5 Themes', 'S5 WP Themes'))?></a><br />
-				<a href="http://gk.site5.com/t/642">Expert WordPress Hosting from Site5 - Try us free for 3 months! </a> 
-			<?php } else { ?>
-				<?php echo of_get_option('footer_copyright')  ?>
-			<?php } ?>
-
-		</div>
+		<div class="copyright">	</div>
 		<!-- end .copyright -->
 
 
