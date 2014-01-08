@@ -54,7 +54,7 @@
 				<h1 class="title">
 
 					<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-						<?php if(of_get_option('clogo')) : echo '<img src="'.of_get_option('clogo').'" alt="'.get_bloginfo('name').'" />'; else: echo ''.of_get_option('clogo_text').''; endif; ?>
+						<?php if(of_get_option('clogo')) : echo '<img src="'.of_get_option('clogo').'" alt="'.get_bloginfo('name').'" width="100"/>'; else: echo ''.of_get_option('clogo_text').''; endif; ?>
 
 					</a>
 
