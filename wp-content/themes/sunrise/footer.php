@@ -25,8 +25,8 @@
 
 		<!-- begin .copyright -->
 		<div class="copyright">	</div>
-		
-				<?php if (of_get_option('display_social') ==1) { ?>
+
+		<?php if (of_get_option('display_social') ==1) { ?>
 					<ul class="social">
 						<?php if (of_get_option('facebook') !='' ) { ?><li><a href="<?php echo of_get_option('facebook');?>" class="facebook" title="<?php _e( 'Facebook', 'site5framework' ); ?>"><?php _e( 'Facebook', 'site5framework' ); ?></a></li><?php } ?>
 						<?php if (of_get_option('twitter') !='' ) { ?><li><a href="<?php echo of_get_option('twitter');?>" class="twitter" title="<?php _e( 'Twitter', 'site5framework' ); ?>"><?php _e( 'Twitter', 'site5framework' ); ?></a></li><?php } ?>
@@ -38,6 +38,7 @@
 						<?php endif ?>
 					</ul>
 				<?php } ?>
+
 		<!-- end .copyright -->
 
 

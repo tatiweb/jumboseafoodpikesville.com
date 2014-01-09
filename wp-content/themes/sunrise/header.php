@@ -48,7 +48,7 @@
 	<div class="container">
 
 		<!-- begin header -->
-		<div class="header-wrapper <?php if(is_home()) { ?>home-background<?php } ?> clearfix" height="0">
+		<div class="header-wrapper <?php if(is_home()) { ?>home-background<?php } ?> clearfix">
 			<header>
 
 				<h1 class="title">
