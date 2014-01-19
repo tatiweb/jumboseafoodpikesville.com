@@ -95,8 +95,9 @@ body {
 a, a:link, a:visited, a:active, a:focus {
   color:#333;
   text-decoration:none;
+  border-bottom:none;
   outline:none;
-  -webkit-tap-highlight-color:rgba(0,0,0,0.1);
+  /*-webkit-tap-highlight-color:rgba(0,0,0,0.1);*/
 }
 a:hover {
   text-decoration:none;border-bottom: dotted 1px #c0c0c0;
@@ -1060,31 +1061,6 @@ a.menu-button {
 .search-results .page-header { margin-bottom:3em; }
 .search-results .page-title { font-size:2em; }
 
-@media only screen and (max-width: 1150px) {
-  .logo img, .logo {
-    margin-right:50px;
-  }
-  .menu {
-    margin-left:-42px;
-  }
-  .main-header {
-    width:9em;
-    padding:0 1.5em;
-    margin-left:-13em;
-  }
-  .footer-copy p {
-    margin-left:14.8571428571em;
-    padding-left:1.71428571429em;
-    padding-right:1.71428571429em;
-  }
-  #primary { padding:1.5em 1.5em; }
-  .ds-gallery-page .two-dim-slider {
-    left:14.1em;
-    top:0;
-    right:0;
-    bottom:0;
-  }
-  p img { max-width:100%; }
 }
 .page-template-ds-gallery-masonry-template-php.collapsed-layout #primary { padding:1em 1em 1.5em; }
 .page-template-ds-gallery-masonry-template-php.collapsed-layout .albums-thumbnails { margin:0 auto; }
