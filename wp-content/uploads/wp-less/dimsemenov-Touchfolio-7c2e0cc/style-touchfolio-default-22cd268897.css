@@ -23,11 +23,11 @@ table {
 
 @font-face {
   font-family:'kirge';
-  src: url('/jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.eot');
-  src: url('/jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.woff') format('woff'),
-       url('/jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.ttf')  format('truetype'),
-       url('/jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.svg#webfont') format('svg');
+  src: url('/fonts/kg/kirimomigeometric-webfont.eot');
+  src: url('/fonts/kg/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/kg/kirimomigeometric-webfont.woff') format('woff'),
+       url('/fonts/kg/kirimomigeometric-webfont.ttf')  format('truetype'),
+       url('/fonts/kg/kirimomigeometric-webfont.svg#webfont') format('svg');
 }
 @font-face {
   font-family:'miso';
@@ -87,8 +87,8 @@ h2.box-title  { font-size:1.3em; margin-top:-2px; font-family:"Miso", sans-serif
 .fade-out { opacity:0 !important; }
 
 body {
-  font-family: "kirge", sans-serif;
-  color:#3b3a37;
+  font-family: Helvetica, Arial, sans-serif;
+  color:#555;
   font-size:1em;
   line-height:1.6;
 }
@@ -115,9 +115,10 @@ p a:hover, li a:hover, blockquote a:hover, .text-block a:hover { border-bottom-c
 .underlined:hover { border-bottom-color:#cc0000; }
 small { font-size:0.75em; }
 h1 {
-  font-size:2.5em;  line-height:1.8em;  color: #3093ca; font-weight:400; text-transform: uppercase;
-  font-family:"Quicksand",sans-serif;
+  font-size:2.5em;  line-height:1.8em;  color: #9a3c9a; font-weight:400; text-transform: uppercase;
+  font-family:"HelveticaNeue",Helvetica, Arial, sans-serif;
   line-height: 1.2;
+  font-weight:100;
   background: -webkit-gradient(linear, left top, left bottom, from(#edbaed), to(#9a3c9a)); /*(#413f9c), to(#c4c3f1));*/
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -126,10 +127,11 @@ h1 {
 }
 
 h2 {
-font-family:"Miso", Impact, HelveticaNeue, sans-serif;
+font-family:"Miso", "HelveticaNeue", sans-serif;
   font-size:1.75em; font-weight:500;
   margin:1.05em 0 .55em;
   line-height:1.123em;
+  color: #154863;
     background: -webkit-gradient(linear, left top, left bottom, from(#417998), to(#154863));
   -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -798,7 +800,9 @@ html, body {
 .main-header {
   margin-left:-14.1em;
   height:100%;
+  padding-left:15px;
   position:relative;
+  box-shadow: 0 1px 3px #f7f7f7;
   width:13em;
   float:left;
   z-index:20;
@@ -829,13 +833,19 @@ html, body {
 .menu ul li a {
   display: block;
   text-decoration: none;
-  font-family: "kirge", HelveticaNeue, Helvetica, Arial, sans-serif;
-  color:#97a6b3;
+  font-family: Helvetica, Arial, sans-serif;
+  color:#555;
+  text-transform: uppercase;
   font-size:1.2em;
   font-weight:400;
   border-bottom:none;
 }
-.menu ul li a:hover {   color:#9A3C9A; }
+.menu ul li a:hover {  
+  -webkit-transition: all .3s ease-in-out; 
+  color:#9A3C9A; 
+  transition: all .3s ease-in-out; 
+  -moz-transition: all .3s ease-in-out;
+}
 .menu li.current-menu-item > a { color: #9A3C9A; }
 .project-menu-sep { margin-bottom:5px; }
 #gallery-menu {
@@ -1107,8 +1117,9 @@ a.menu-button {
   clear:both;
   float:right;
   margin-right:0;
-  border-bottom:5px;
   border: solid 1px #ddd;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
   position:absolute;
   right:0;
   top:0;
@@ -1117,7 +1128,12 @@ a.menu-button {
   width:150px;
   /*overflow:hidden;*/
 }
-.collapsed-layout .main-header .menu { margin:0 0 0 0; width:175px; }
+.collapsed-layout .main-header .menu { 
+  margin:0 0 0 0; 
+  width:175px; 
+  border-bottom-radius:5px; 
+  box-shadow: 0 5px 5px #ddd; 
+}
 .collapsed-layout .main-header .menu li {
   width:auto;
   padding:4px 0px 4px 0px;
@@ -1127,6 +1143,11 @@ a.menu-button {
   display:block;
   padding:0 5px 0 5px;
   color:#000;
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
 }
 .collapsed-layout .main-header .menu a:hover, .collapsed-layout .main-header .menu li a:hover { color:#fff; }
 .collapsed-layout .menu li a { font-size:15px; }
