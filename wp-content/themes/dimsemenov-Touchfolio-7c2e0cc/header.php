@@ -17,7 +17,6 @@
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/jumboseafoodpikesville.com/wp-content/themes/dimsemenov-Touchfolio-7c2e0cc/css-less/slabtext.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/jumboseafoodpikesville.com/wp-content/themes/dimsemenov-Touchfolio-7c2e0cc/js/isotope.js"></script>
 	    <style>
         .col-1
             {
