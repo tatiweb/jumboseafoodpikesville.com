@@ -72,7 +72,7 @@ h2.box-title  { font-size:1.3em; margin-top:-2px; font-family:"Miso", sans-serif
 .fade-out { opacity:0 !important; }
 
 body {
-  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color:#555;
   font-size:1em;
   line-height:1.6;
@@ -96,16 +96,12 @@ p a:hover, li a:hover, blockquote a:hover, .text-block a:hover { border-bottom-c
 }
 .underlined:hover { border-bottom-color:#cc0000; }
 small { font-size:0.75em; }
+
 h1 {
   font-size:2.5em;  line-height:1.8em;  color: #9a3c9a; font-weight:400; text-transform: uppercase;
-  font-family:"HelveticaNeue",Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  font-weight:100;
-  background: -webkit-gradient(linear, left top, left bottom, from(#edbaed), to(#9a3c9a)); /*(#413f9c), to(#c4c3f1));*/
-  -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      -webkit-mask-image: -webkit-gradient(linear, left top, È
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  font-weight:100; /*#edbaed*/
 }
 
 h2 {
@@ -113,12 +109,7 @@ font-family:"Miso", "HelveticaNeue", sans-serif;
   font-size:1.75em; font-weight:500;
   margin:1.05em 0 .55em;
   line-height:1.123em;
-  color: #154863;
-    background: -webkit-gradient(linear, left top, left bottom, from(#417998), to(#154863));
-  -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-      -webkit-mask-image: -webkit-gradient(linear, left top, È
-    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  color: #154863;/*#417998*/
 }
 h3 {
   font-size:1.25em;
@@ -1305,10 +1296,9 @@ h1.heroku { text-transform:uppercase; font-size:5em; margin-top:0; font-family: 
 h1.lime { text-transform:uppercase; font-size:5em; margin-top:0; font-family: quicksand, sans-serif;  font-size:50px; background: -webkit-gradient(linear, left top, left bottom, from(#413f9c), to(#c4c3f1));   -webkit-background-clip: text;     -webkit-text-fill-color: transparent;      -webkit-mask-image: -webkit-gradient(linear, left top, È    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); font-variant: normal;
   background-color: #a0d03f;  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
   }
-h1.newyear { text-transform:uppercase; font-size:5em; margin-top:0; font-family: quicksand, sans-serif;  font-size:50px; background: -webkit-gradient(linear, left top, left bottom, from(#413f9c), to(#c4c3f1));   -webkit-background-clip: text;     -webkit-text-fill-color: transparent;      -webkit-mask-image: -webkit-gradient(linear, left top, È    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); font-variant: normal;
-  background-color: #911c16;  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);  background-image: linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+h1.newyear { text-transform:uppercase; font-size:5em; margin-top:0; font-family: quicksand, sans-serif;  font-size:50px; color: #911c16;  
   }
-.contact { font-size:14px; width:31%; float:left;margin-right: 25px; } .hours { font-size: 14px; width:31%; float:left; } .social { width:31%; float:left; }
+.contact { font-size:14px; width:31%; float:left;margin-right: 25px; } .hours { font-size: 14px; width:31%; float:left; } .social { width:30%; float:left; }
 
 .ftr { margin-top:10px;}
 a:link, a:hover, a:focus, .ftr a:hover { border-bottom:none; }
@@ -1318,3 +1308,6 @@ a { outline: 0;}
 input::-moz-focus-inner { 
   border: 0; 
 }
+
+h1.entry-title { font-family: Helvetica; color:#9A3C9A; }
+.menu-categories a:hover { background:#9a3c9a; color:white; } p { font-size:.6666em; } p img { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
