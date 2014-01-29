@@ -47,7 +47,7 @@ The comments page for Site5 Framework
 
 	<?php else : // comments are closed ?>
 	<!-- If comments are closed. -->
-	<p class="nocomments"><?php _e('','site5framework'); ?></p>
+	<p class="nocomments"><?php _e('Comments are closed.','site5framework'); ?></p>
 
 	<?php endif; ?>
 

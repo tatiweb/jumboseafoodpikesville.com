@@ -34,6 +34,16 @@
 				</div>
 				<!-- end .post-thumb -->
 
+				<div class="meta">
+					<span class="post-date"><?php echo get_the_date(); ?></span> - 
+					<span class="post-comments"> 
+						<?php comments_popup_link(__('No Comments', 'site5framework'), __('1 Comment', 'site5framework'), __('% Comments', 'site5framework')); ?>
+					</span> - 
+					<span class="post-author"><?php _e('by','site5framework') ?> <?php the_author(); ?></span>
+				</div>
+
+				
+
 				<?php the_content(); ?>
 
 				<?php endwhile; ?>

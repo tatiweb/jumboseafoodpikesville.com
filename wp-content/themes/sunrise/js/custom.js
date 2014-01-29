@@ -53,15 +53,15 @@ jQuery(document).ready(function($){
 
 
   /********** adjust the header image height on homepage **********/
-  // resizeHeaderImage();
+  resizeHeaderImage();
 
-  // $(window).bind("resize", resizeHeaderImage);
-  // function resizeHeaderImage( e ) {
-  //   elem = $('.home .header-wrapper');
-  //   if(elem.outerHeight() < $(window).height()) {
-  //      elem.css({height:$(window).height()});
-  //   } 
-  // }
+  $(window).bind("resize", resizeHeaderImage);
+  function resizeHeaderImage( e ) {
+    elem = $('.home .header-wrapper');
+    if(elem.outerHeight() < $(window).height()) {
+       elem.css({height:$(window).height()});
+    } 
+  }
 
 
 

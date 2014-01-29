@@ -28,7 +28,7 @@
 
     ?></title>
 
-    <link rel="shortcut icon" href="/test/wp-content/jsico.ico" />
+    <link rel="shortcut icon" href="/jumboseafoodpikesville.com/wp-content/jsico.ico" />
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
@@ -98,7 +98,7 @@
 
             <div class="logo">
 
-                <a href="/test"><img class="logo" src="/test/wp-content/images/jslogo.jpg" width="150" /></a>
+                <a href="/jumboseafoodpikesville.com"><img class="logo" src="/jumboseafoodpikesville.com/wp-content/images/jslogo.jpg" width="150" /></a>
 
                 </a>
 
@@ -138,7 +138,7 @@
 
             </nav>
 
-            <!-- <img src="/test/wp-content/images/beach.png" width="180"/> -->
+            <!-- <img src="/jumboseafoodpikesville.com/wp-content/images/beach.png" width="180"/> -->
 
             <?php if ( has_nav_menu( 'social' ) ) { ?>
 

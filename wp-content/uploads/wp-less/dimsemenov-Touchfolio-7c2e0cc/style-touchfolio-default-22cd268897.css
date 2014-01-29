@@ -23,19 +23,19 @@ table {
 
 @font-face {
   font-family:'kirge';
-  src: url('/fonts/kg/kirimomigeometric-webfont.eot');
-  src: url('/fonts/kg/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/kg/kirimomigeometric-webfont.woff') format('woff'),
-       url('/fonts/kg/kirimomigeometric-webfont.ttf')  format('truetype'),
-       url('/fonts/kg/kirimomigeometric-webfont.svg#webfont') format('svg');
+  src: url('http://jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.eot');
+  src: url('http://jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.woff') format('woff'),
+       url('http://jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.ttf')  format('truetype'),
+       url('http://jumboseafoodpikesville.com/fonts/kg/kirimomigeometric-webfont.svg#webfont') format('svg');
 }
 @font-face {
   font-family:'miso';
-  src: url('/fonts/mso/miso-regular-webfont.eot');
-  src: url('/fonts/mso/miso-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/fonts/mso/miso-regular-webfont.woff') format('woff'),
-       url('/fonts/mso/miso-regular-webfont.ttf')  format('truetype'),
-       url('/fonts/mso/miso-regular-webfont.svg#webfont') format('svg');
+  src: url('http://jumboseafoodpikesville.com/fonts/mso/miso-regular-webfont.eot');
+  src: url('http://jumboseafoodpikesville.com/fonts/mso/miso-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('http://jumboseafoodpikesville.com/fonts/mso/miso-regular-webfont.woff') format('woff'),
+       url('http://jumboseafoodpikesville.com/fonts/mso/miso-regular-webfont.ttf')  format('truetype'),
+       url('http://jumboseafoodpikesville.com/fonts/mso/miso-regular-webfont.svg#webfont') format('svg');
 }
 
 .box-title {  margin-bottom: 10px;}
@@ -1122,11 +1122,7 @@ a.menu-button {
   margin-top:25px;
 }
 .collapsed-layout .menu-sep { display:none; }
-.collapsed-layout #main {
-  width:100%;
-  padding:12px;
-  clear:both;
-}
+.collapsed-layout #main { border-left:none; padding-top:15px; top:-100px; margin-left:20px;  width:100%;  padding:12px;  clear:both; }
 .collapsed-layout #primary {
   padding:1em 10% 1.5em;
 }

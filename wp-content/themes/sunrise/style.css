@@ -52,7 +52,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent;
-	font-family:"Helvetica";
 }
 body {
 	line-height: 1;
@@ -201,8 +200,6 @@ a img {border: 0;}
 	line-height: 1;
 }
 
-h1, h2, h3, h4, h5 { font-weight:normal; }
-
 .bigger, h3 {
 	font-size: 26px;
 	line-height: 36px;
@@ -247,6 +244,9 @@ img::selection 		{ background: transparent;}
 img::-moz-selection	{ background: transparent;}
 body 				{-webkit-tap-highlight-color: rgb(255,255,158);}
 
+
+
+
 /* apply a natural box layout model to all elements */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 * { transition: all 0.3s ease-out; } 
@@ -257,7 +257,7 @@ body {
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 	margin: 0 auto;
 	color: #666666;
-    font-family: 'Helvetica',Sans-Serif;
+    font-family: Helvetica, sans-serif;
     font-size: 14px;
 }
 a {
@@ -388,15 +388,13 @@ header h1.title span {
 }
 
 
-/*--social--*/
+
 .social {
     margin: 0;
-    padding-top:5px;
     list-style: none;
     position: absolute;
     right:10px;
     top:10px;
-    background:#f5f5f5;
 }
 .social li  {
     padding: 0 0 0 5px;
@@ -414,7 +412,7 @@ header h1.title span {
     opacity: 0.5;
 }
 .social li a:hover {
-	opacity: 1;
+	opacity: 0.9;
 }
 .social li a.twitter {
     background-position: 0px 0;
@@ -443,6 +441,8 @@ footer {
 	padding: 20px 0;
 	overflow:hidden;
 	margin: 0 auto;
+	background: #111111;
+	color: #999;
 }
 
 
@@ -470,6 +470,7 @@ footer {
 }
 
 .copyright {
+	background: #222;
 	clear: both;
 	padding: 20px 0;
 	text-align: center;
@@ -490,6 +491,7 @@ footer {
 
 }
 .nav-wrapper {
+	background: crimson;
 	padding: 3px 0;
 	margin-top: 20px;
 }
@@ -512,19 +514,18 @@ nav ul li {
     transition:none;
 }
 nav ul li a {
-	padding: 21px 5px;
+	padding: 13px 5px;
 	color: #ddd;
 	text-decoration: none;
 	transition:none;
-	font-family:Helvetica;
 }
 nav ul li a span {
-	font-family: Helvetica, serif;
+	font-family: Georgia, serif;
 	font-style: italic;
 	font-weight: normal;
 }
 nav ul li a:hover, nav ul li.current-menu-item a, nav ul li.current_page_item a {
-	color: #9a3c9a;
+	color: #fff;
 }
 nav ul li.active a {
 	
@@ -533,6 +534,7 @@ nav ul li.active a {
 /************************ Nav Submenu ************************/
 ul.sub-menu {
 	position: absolute;
+	/*background: url(img/bg_nav.png) top left repeat;*/
 	margin-top: 4px;
 	margin-left: -15px;
 	width: 250px;
@@ -592,7 +594,7 @@ ul.subnav li {
 section.main {
 	/*width: 960px;*/
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 50px 20px;
 }
 
 section.main h1 {
@@ -653,20 +655,18 @@ a.comment-reply-link {
 	margin: 20px auto;
 	color: #fff;
 	text-transform: uppercase;
+	font-family: 'Open Sans',Sans-Serif;
 	font-size: 16px;
 	font-weight: bold;
 	text-shadow:1px 1px rgba(0,0,0, .5);
-	background:#555;
-	-webkit-box-shadow: inset 0 1px 1px #999;
-	-moz-box-shadow: inset 0 1px 1px #999;
-	box-shadow: inset 0 1px 1px #999;
+	background: #D93600 url(img/bg_button.png) 50% 50% repeat-x;
 	display: block;
 	width: 200px;
 	border:0;
 	padding: 10px 30px;
 	text-align: center;
+
 	-webkit-border-radius: 3px;
-	font-family: "Lucida Grand", "Corbel", "Helvetica", sans-serif;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
@@ -789,11 +789,10 @@ a.map-toggle .hide {
 
 h2.post-title {
 	text-align: left;
-	font-size: 33px;
+	font-size: 50px;
 	font-weight: 100;
 	margin:0 auto 50px;
-	color: #9a3c9a;
-	text-transform: uppercase;
+	color: #868686;
 }
 
 
@@ -1304,10 +1303,10 @@ nav select {
     }
     nav select {
 	    display: inline-block;
-
 	    width: 100%;
 	    border: 1px solid #ccc;
 	    color: #666; padding:5px;
+	    font-family: 'Cabin Condensed', Arial, sans-serif;
 	    font-size: 12px;
     } 
 	
@@ -1614,4 +1613,33 @@ nav select {
 	width: 100%;
 	height: 400px;
 }
-.post-28 h2.post-title { display:none; }
+
+#map  {
+position: relative;
+padding-bottom: 30.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+#map iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:30%;
+/*height: 100%;*/
+}
+
+#map {
+position: relative;
+padding-bottom: 30%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+}
+#map iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+height: 100% !important;
+}

@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'version' => '0.9.2.9',
+	'version' => '0.9.3',
 	'browsercache.configuration_sealed' => false,
 	'cdn.configuration_sealed' => false,
 	'cloudflare.configuration_sealed' => false,
@@ -15,6 +15,8 @@ return array(
 	'varnish.configuration_sealed' => false,
 	'fragmentcache.configuration_sealed' => false,
 	'newrelic.configuration_sealed' => false,
+	'extensions.configuration_sealed' => array(
+	),
 	'notes.minify_error' => false,
 	'minify.error.last' => '',
 	'minify.error.notification' => '',
