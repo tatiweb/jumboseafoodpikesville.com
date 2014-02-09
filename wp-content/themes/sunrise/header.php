@@ -11,9 +11,6 @@
 <meta name="viewport" content="user-scalable=no, maximum-scale=1,  width=device-width, initial-scale=1"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="keywords" content="<?php echo of_get_option('metakeywords'); ?>" />
-<link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>"/>
-<script type="text/javascript" src="//use.typekit.net/lbw2dtf.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <meta name="description" content="<?php echo of_get_option('metadescription'); ?>" />
 <!-- end meta -->
 
