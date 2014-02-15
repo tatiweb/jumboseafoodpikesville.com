@@ -10,6 +10,7 @@
 ?>
   </div>
   <div class="push"></div> <?php // this semantics is such a boring thing ?>
+  <img src="/jumboseafoodpikesville.com/wp-content/themes/dimsemenov-Touchfolio-2312492/img/social.png"/>
 </div>
 <footer class="footer-copy">
       <p><?php echo get_ds_option('footer_text'); ?></p>

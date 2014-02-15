@@ -23,14 +23,15 @@
         <!-- end footer -->
 
 		<!-- begin .copyright -->
-		<div class="copyright">	&copy; Jumbo Seafood Pikesville<br/><br/>
+		<div class="copyright">
 		48 E. Sudbrook Lane
 Pikesville, MD   21208<br/>
 Phone: 410-602-1441, 401-602-1442 <br/> <br/>
 <span style="font-weight:bold;">Hours</span><br/> M: Closed<br/>
 Tu-Th: 11:30AM-10:00PM<br/>
 Fr&Sa: 11:30AM-10:30PM<br/>
-Su: 12:00PM-10:00PM</div>
+Su: 12:00PM-10:00PM<br/><br/>
+&copy; Jumbo Seafood Pikesville<br/></div>
 
 		<!-- end .copyright -->
 

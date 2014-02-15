@@ -4,81 +4,81 @@
 
 <head>
 
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0" />
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1.0" />
 
-    <title><?php
+	<title><?php
 
-        global $page, $paged;
+		global $page, $paged;
 
-        wp_title( '|', true, 'right' );
+		wp_title( '|', true, 'right' );
 
-        bloginfo( 'name' );
+		bloginfo( 'name' );
 
-        $site_description = get_bloginfo( 'description', 'display' );
+		$site_description = get_bloginfo( 'description', 'display' );
 
-        if ( $site_description && ( is_home() || is_front_page() ) )
+		if ( $site_description && ( is_home() || is_front_page() ) )
 
-            echo " | $site_description";
+			echo " | $site_description";
 
-        if ( $paged >= 2 || $page >= 2 )
+		if ( $paged >= 2 || $page >= 2 )
 
-            echo ' | ' . sprintf( __( 'Page %s', 'ds-framework' ), max( $paged, $page ) );
+			echo ' | ' . sprintf( __( 'Page %s', 'ds-framework' ), max( $paged, $page ) );
 
-    ?></title>
+	?></title>
 
-    <link rel="shortcut icon" href="/jumboseafoodpikesville.com/wp-content/jsico.ico" />
+	<link rel="shortcut icon" href="/test/wp-content/jsico.ico" />
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
-    <?php // Facebook stuff ?>
+   	<?php // Facebook stuff ?>
 
-    <?php if(get_ds_option('fb_admin_id')) { ?>
+	<?php if(get_ds_option('fb_admin_id')) { ?>
 
-    <meta property="fb:admins" content="<?php echo get_ds_option('fb_admin_id'); ?>" />
+	<meta property="fb:admins" content="<?php echo get_ds_option('fb_admin_id'); ?>" />
 
-    <?php } ?>
+	<?php } ?>
 
-    <?php if (is_single()) { ?>
+	<?php if (is_single()) { ?>
 
-    <meta property="og:url" content="<?php the_permalink() ?>"/>
+	<meta property="og:url" content="<?php the_permalink() ?>"/>
 
-    <meta property="og:title" content="<?php single_post_title(''); ?>" />
+	<meta property="og:title" content="<?php single_post_title(''); ?>" />
 
-    <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
+	<meta property="og:description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
 
-    <meta property="og:type" content="article" />
+	<meta property="og:type" content="article" />
 
-    <meta property="og:image" content="<?php if (function_exists('ds_get_og_image')) { echo ds_get_og_image(); }?>" />
+	<meta property="og:image" content="<?php if (function_exists('ds_get_og_image')) { echo ds_get_og_image(); }?>" />
 
-    <?php } else { ?>
+	<?php } else { ?>
 
-    <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+	<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
-    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 
-    <meta property="og:type" content="website" />
+	<meta property="og:type" content="website" />
 
-    <meta property="og:image" content="<?php echo get_ds_option('main_logo'); ?>" /> <?php } ?>
+	<meta property="og:image" content="<?php echo get_ds_option('main_logo'); ?>" /> <?php } ?>
 
-    <?php
+	<?php
 
-    $ds_gcode = get_ds_option('google_fonts_code');
+	$ds_gcode = get_ds_option('google_fonts_code');
 
-    if($ds_gcode) {
+	if($ds_gcode) {
 
-        echo $ds_gcode;
+		echo $ds_gcode;
 
-    }
+	}
 
-    ?>
+	?>
 
-    <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 
-    <![endif]-->
+	<![endif]-->
 
 <?php wp_head(); ?>
 
@@ -90,82 +90,82 @@
 
 <div id="page" class="hfeed site">
 
-    <?php global $data; ?>
+	<?php global $data; ?>
 
-    <header class="main-header">
+	<header class="main-header">
 
-        <section class="top-logo-group">
+		<section class="top-logo-group">
 
-            <div class="logo">
+			<div class="logo">
 
-                <a href="/jumboseafoodpikesville.com"><img class="logo" src="/jumboseafoodpikesville.com/wp-content/images/jslogo.jpg" width="150" /></a>
+				<a href="/test"><img class="logo" src="/test/wp-content/images/jslogo.jpg" width="150" /></a>
 
-                </a>
+				</a>
 
-            </div>
+			</div>
 
-        </section>
+		</section>
 
-        <div class="menus-container">
+		<div class="menus-container">
 
-            <nav id="main-menu" class="menu">
+			<nav id="main-menu" class="menu">
 
-            <?php
+			<?php
 
-            if ( has_nav_menu( 'primary' ) ) {
+			if ( has_nav_menu( 'primary' ) ) {
 
-                echo wp_nav_menu( array(
+				echo wp_nav_menu( array(
 
-                    'theme_location' => 'primary',
+					'theme_location' => 'primary',
 
-                    'container'      => false,
+					'container'      => false,
 
-                    'container_class' => 'menu-header',
+					'container_class' => 'menu-header',
 
-                    'menu_class' => 'primary-menu',
+					'menu_class' => 'primary-menu',
 
-                    'echo' => false
+					'echo' => false
 
-                ));
+				));
 
-            } else {
+			} else {
 
-            ?>
+			?>
 
-                <p><?php _e('Primary menu is not selected and/or created. Please go to "Appearance &rarr; Menus" and setup menu.' ,'dsframework'); ?></p>
+				<p><?php _e('Primary menu is not selected and/or created. Please go to "Appearance &rarr; Menus" and setup menu.' ,'dsframework'); ?></p>
 
-            <?php } ?>
+			<?php } ?>
 
-            </nav>
+			</nav>
 
-            <!-- <img src="/jumboseafoodpikesville.com/wp-content/images/beach.png" width="180"/> -->
+			<!-- <img src="/test/wp-content/images/beach.png" width="180"/> -->
 
-            <?php if ( has_nav_menu( 'social' ) ) { ?>
+			<?php if ( has_nav_menu( 'social' ) ) { ?>
 
-                <nav class="social-menu menu">
+				<nav class="social-menu menu">
 
-                    <?php
+					<?php
 
-                    echo wp_nav_menu( array(
+					echo wp_nav_menu( array(
 
-                        'theme_location' => 'social',
+						'theme_location' => 'social',
 
-                        'container'      => false,
+						'container'      => false,
 
-                        'container_class' => '',
+						'container_class' => '',
 
-                        'menu_class' => false
+						'menu_class' => false
 
-                    ));
+					));
 
-                    ?>              <br>
+					?>				<br>
 
-                    <p><?php /* echo get_ds_option('footer_text'); */ ?></p>
+					<p><?php /* echo get_ds_option('footer_text'); */ ?></p>
 
-                </nav>          <?php } ?>
+				</nav>			<?php }	?>
 
-                </div><br>
+				</div><br>
 
-                </header>
+				</header>
 
-    <div id="main">
+	<div id="main">
