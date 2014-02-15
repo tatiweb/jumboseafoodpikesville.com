@@ -80,30 +80,46 @@ q:before, q:after {
 }
 @font-face {
     font-family: 'KirimomiSwash';
-    src: url('http://sudocoda.com/fonts/kirimomiswash-webfont.eot');
-    src: url('http://sudocoda.com/fonts/kirimomiswash-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://sudocoda.com/fonts/kirimomiswash-webfont.woff') format('woff'),
-         url('http://sudocoda.com/fonts/kirimomiswash-webfont.ttf') format('truetype'),
-         url('http://sudocoda.com/fonts/kirimomiswash-webfont.svgz#KirimomiSwashItalic') format('svg'),
-         url('http://sudocoda.com/fonts/kirimomiswash-webfont.svg#KirimomiSwashItalic') format('svg');
+    src: url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.eot');
+    src: url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.woff') format('woff'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.ttf') format('truetype'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.svgz#KirimomiSwashItalic') format('svg'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomiswash-webfont.svg#KirimomiSwashItalic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'KirimomiGeometric';
-    src: url('http://sudocoda.com/fonts/kirimomigeometric-webfont.eot');
-    src: url('http://sudocoda.com/fonts/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://sudocoda.com/fonts/kirimomigeometric-webfont.woff') format('woff'),
-         url('http://sudocoda.com/fonts/kirimomigeometric-webfont.ttf') format('truetype'),
-         url('http://sudocoda.com/fonts/kirimomigeometric-webfont.svgz#KirimomiGeometricRegular') format('svg'),
-         url('http://sudocoda.com/fonts/kirimomigeometric-webfont.svg#KirimomiGeometricRegular') format('svg');
+    src: url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.eot');
+    src: url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.woff') format('woff'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.ttf') format('truetype'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.svgz#KirimomiGeometricRegular') format('svg'),
+         url('http://jumboseafoodpikesville.com/fonts/kirimomigeometric-webfont.svg#KirimomiGeometricRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
+@font-face { 
+    font-family:"GothamBook";src:url('http://sudocoda.com/fonts/Gotham-Book.otf'); 
+    src:url('http://sudocoda.com/fonts/gotham-book-webfont.eot');
+    src:url('http://sudocoda.com/fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'), 
+        url('http://sudocoda.com/fonts/gotham-book-webfont.ttf') format('truetype'),
+        url('http://sudocoda.com/fonts/gotham-book-webfont.svg#GothamBook') format('svg');
+}
+
+@font-face { 
+    font-family:"GothamBoldItalic";
+    src:url('http://sudocoda.com/fonts/Gotham-BoldItalic.otf'); 
+    src:url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.eot');
+    src:url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), 
+        url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.ttf') format('truetype'),
+        url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.svg#GothamBoldItalic') format('svg');
+}
+/*@font-face {
 	font-family:"Futura";
 	src: url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.ttf');
-}
+*/}
 :focus {
 	outline: 0;
 }
@@ -507,6 +523,7 @@ footer {
 }
 
 .copyright {
+	font-family:"GothamBook";
 	background: #fff;
 	clear: both;
 	padding: 20px 0;
@@ -553,7 +570,7 @@ nav ul li {
 nav ul li a {
 	padding: 13px 5px;
 	color: #ddd;
-	font-family:"Futura";
+	font-family:"GothamBook";
 	text-decoration: none;
 	transition:none;
 }
@@ -836,8 +853,8 @@ h2.post-title {
 	font-size: 50px;
 	font-weight: 100;
 	margin:0 auto 50px;
-	color: hsla(301, 42, 43, 1);
-	font-family:"Futura";
+	color: #983d97;
+	font-family:"GothamBook";
 }
 
 .meta,
@@ -905,6 +922,7 @@ img.blog-thumb {
 
 	.menulist .menu-item-title {
 		font-size: 22px;
+		font-family:"GothamBook";
 		font-weight: 100;
 		margin-bottom: 0;
 	}
@@ -919,7 +937,7 @@ img.blog-thumb {
 	}
 
 	.menu-title {
-		font-family:"Futura";
+		font-family:"GothamBook";
 		text-align: center;
 		font-weight: 600;
 		font-size: 22px;
@@ -1014,6 +1032,7 @@ section.main .post {
 	margin:0 auto;
 }
 section.main p {	color:#666666;	font-size:14px;
+	font-family:"GothamBook";
 	padding-bottom: 20px;
 }
 section.main .post p em {
@@ -1351,7 +1370,7 @@ nav select {
 	    width: 100%;
 	    border: 1px solid #ccc;
 	    color: #666; padding:5px;
-	    font-family: 'Futura', Helvetica, sans-serif;
+	    font-family: 'GothamBook', Helvetica, sans-serif;
 	    font-size: 12px;
     } 
 	

@@ -27,4 +27,10 @@
                         "std" => "font-family: 'Open Sans', sans-serif",
                         "type" => "text");
 
+    $options[] = array( "name" => "Gotham",
+                        "desc" => "Ex: font-family: 'GothamBook', sans-serif",
+                        "id" => SN."gotham",
+                        "std" => "font-family: 'GothamBook', sans-serif",
+                        "type" => "text");
+
 ?>
