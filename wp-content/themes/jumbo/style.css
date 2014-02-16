@@ -542,12 +542,20 @@ footer .container {
 nav * {
 	/*transition:none;*/
 }
+#menu-icon {
+	display: hidden; 
+	font-size:3em;
+	color:#983d97;
+}
+a:hover#menu-icon {
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+}
 nav {
 	margin:  0 auto;
 	padding: 0;
 	line-height: 36px;
 	text-align: center;
-	
 }
 nav ul li {
 	display: inline-block;
@@ -1348,7 +1356,33 @@ nav select {
         clear: left;
     }
     .oneThird { float:left; clear:both; text-align:left; width:100%; margin-bottom:20px; }
+	
+	/*#menu-icon {
+		display:inline-block;
+	}*/
 
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 3px solid #983d97;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	nav:hover ul {
+		display: block;
+	}
 
 	body {
 	/*	width: 250px;

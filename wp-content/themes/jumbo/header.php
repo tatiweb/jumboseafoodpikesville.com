@@ -62,6 +62,8 @@
 
 				<span class="description"><?php bloginfo('description'); ?></span>
 
+				<a href="#" id="menu-icon">&#9776;</a>
+
 				<!-- begin nav -->
 				<div class="nav-wrapper">
 					<nav>
