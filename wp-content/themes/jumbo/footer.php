@@ -18,25 +18,26 @@
 		    <?php }?>
 
 		</div>
-
-		</footer>
+	
         <!-- end footer -->
 
 		<!-- begin .copyright -->
 		
-		<div class="oneHalf">
-		<h4>Address</h4>
+	<div class="oneThird">
 		48 E. Sudbrook Lane
-Pikesville, MD   21208<br/>
-Phone: 410-602-1441, 401-602-1442 
-</div>
-<div class="oneHalf">
-<h4>Hours</h4>M: Closed<br/>
-Tu-Th: 11:30AM-10:00PM<br/>
-Fr&Sa: 11:30AM-10:30PM<br/>
-Su: 12:00PM-10:00PM</div>
-<div class="copyright">
-&copy; Jumbo Seafood Pikesville<br/></div>
+		Pikesville, MD   21208<br/>
+		Phone: 410-602-1441, 401-602-1442 
+	</div>
+	<div class="oneThird">
+		&copy; Jumbo Seafood Pikesville
+	</div>
+	<div class="oneThird">
+		<h5>M: Closed<br/>
+		Tu-Th: 11:30AM-10:00PM<br/>
+		Fr&Sa: 11:30AM-10:30PM<br/>
+		Su: 12:00PM-10:00PM</div>
+		<br/>
+	</div>
 
 		<!-- end .copyright -->
 
@@ -56,7 +57,7 @@ Su: 12:00PM-10:00PM</div>
 				<?php } ?>
 	<!-- end container -->
 
-	<?php wp_footer(); ?> 
+	<?php wp_footer(); ?> </footer>
 
 	</body>
 </html>
