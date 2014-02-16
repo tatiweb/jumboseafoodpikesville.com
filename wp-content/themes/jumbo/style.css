@@ -553,9 +553,9 @@ nav ul li a {
 	color: #333;
 	font-family:"GothamBook";
 	text-decoration: none;
-	transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
+	transition: all .14s ease-in-out;
+	-webkit-transition: all .14s ease-in-out;
+	-moz-transition: all .14s ease-in-out;
 }
 nav ul li a span {
 	font-family: Georgia, serif;
