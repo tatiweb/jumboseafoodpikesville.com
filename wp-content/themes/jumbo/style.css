@@ -280,7 +280,7 @@ body 				{-webkit-tap-highlight-color: #ead95e;}
 
 /* apply a natural box layout model to all elements */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-* { transition: all 0.3s ease-out; } 
+/** { transition: all 0.14s ease-in-out; } */
 
 body {
 	background: rgb(255,255,255,0);
@@ -540,7 +540,7 @@ footer .container {
 	margin-top: 30px;
 }
 nav * {
-	transition:none;
+	/*transition:none;*/
 }
 nav {
 	margin:  0 auto;
@@ -555,7 +555,7 @@ nav ul li {
 	font-size: 14px;
 	font-weight: 700;
     text-transform: uppercase;
-    transition:none;
+    /*transition:none;*/
 }
 nav ul li a {
 	padding: 8px 0;
@@ -831,7 +831,7 @@ a.collapsed:after {
 	position: relative;
 	z-index: 1;
 	display: none;
-	transition:none;
+	/*transition:none;*/
 }
 a.map-toggle .hide {
 	display: none;
