@@ -397,12 +397,15 @@ a:hover {
 header {
 	margin: 0 auto;
 	padding:30px 0 0;
-	/*position: fixed;*/
+	border-bottom: solid 1px #eee;
+	max-width:1130px; width:90%;
 	z-index: 1000;
 	width: 100%;
 	position: relative;
 }
 header h1.title {
+	float:left;
+	/*margin:0 21%;*/
 	font-size: 30px;
 	font-weight: 800;
 	text-align:center;
@@ -541,12 +544,14 @@ footer {
 .navigation {
 	font-size: 12px;
 	padding-top: 30px;
-
 }
 .nav-wrapper {
-	background: #983d97;
+	background: #fff;
+	float:right;
+	/*margin-left:30px;*/
+	margin-left:10%;
 	padding: 3px 0;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 nav * {
 	transition:none;
@@ -568,7 +573,7 @@ nav ul li {
 }
 nav ul li a {
 	padding: 13px 5px;
-	color: #ddd;
+	color: #333;
 	font-family:"GothamBook";
 	text-decoration: none;
 	transition:none;
@@ -579,7 +584,8 @@ nav ul li a span {
 	font-weight: normal;
 }
 nav ul li a:hover, nav ul li.current-menu-item a, nav ul li.current_page_item a {
-	color: #fff;
+	border-bottom:solid 1px #983d97;
+	color:#983d97;
 }
 nav ul li.active a {
 	

@@ -51,10 +51,10 @@
 		<div class="header-wrapper <?php if(is_home()) { ?>home-background<?php } ?> clearfix">
 			<header>
 
-				<h1 class="title">
+				<h1 class="title logo">
 
 					<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
-						<img src="/jumboseafoodpikesville.com/wp-content/themes/jumbo/img/jumbologo.png" />
+						<img src="/jumboseafoodpikesville.com/wp-content/themes/jumbo/img/jumbologo.png" width=100/>
 
 					</a>
 
@@ -71,19 +71,6 @@
 					</nav>
 				</div>
 				<!-- end nav -->
-
-				<?php if (of_get_option('display_social') ==1) { ?>
-					<ul class="social">
-						<?php if (of_get_option('facebook') !='' ) { ?><li><a href="<?php echo of_get_option('facebook');?>" class="facebook" title="<?php _e( 'Facebook', 'site5framework' ); ?>"><?php _e( 'Facebook', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('twitter') !='' ) { ?><li><a href="<?php echo of_get_option('twitter');?>" class="twitter" title="<?php _e( 'Twitter', 'site5framework' ); ?>"><?php _e( 'Twitter', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('youtube') !='' ) { ?><li><a href="<?php echo of_get_option('youtube');?>" class="youtube" title="<?php _e( 'Youtube', 'site5framework' ); ?>"><?php _e( 'Youtube', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('gplus') !='' ) { ?><li><a href="<?php echo of_get_option('gplus');?>" class="gplus" title="<?php _e( 'Google+', 'site5framework' ); ?>"><?php _e( 'Google+', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('skype') !='' ) { ?><li><a href="<?php echo of_get_option('skype');?>" class="skype" title="<?php _e( 'Skype', 'site5framework' ); ?>"><?php _e( 'Skype', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if(of_get_option('rss')=='1'): ?>
-							<li><a href="<?php echo of_get_option('extrss') ?  of_get_option('extrss') : bloginfo('rss_url'); ?>" title="<?php _e( 'RSS', 'site5framework' ); ?>" class="rss"></a></li>
-						<?php endif ?>
-					</ul>
-				<?php } ?>
 
 				<?php if(is_home()) { ?>
 					<?php if(of_get_option('intro_text') !='') { ?>
