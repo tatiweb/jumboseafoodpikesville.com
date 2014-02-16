@@ -571,11 +571,13 @@ nav ul li {
     transition:none;
 }
 nav ul li a {
-	padding: 13px 5px;
+	padding: 8px 0;
 	color: #333;
 	font-family:"GothamBook";
 	text-decoration: none;
-	transition:none;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
 }
 nav ul li a span {
 	font-family: Georgia, serif;
