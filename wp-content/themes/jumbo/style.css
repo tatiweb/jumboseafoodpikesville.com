@@ -69,7 +69,7 @@ q:before, q:after {
 }
 
 @font-face {
-    font-family: 'League Gothic';
+    font-family: 'LeagueGothic';
     src: url('http://sudocoda.com/fonts/leaguegothic-regular-webfont.eot');
     src: url('http://sudocoda.com/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('http://sudocoda.com/fonts/leaguegothic-regular-webfont.woff') format('woff'),
@@ -291,12 +291,17 @@ body {
     font-family: "GothamBook", sans-serif;
     font-size: 14px;
 }
-a {
-	color: #E54D1B;
+.foodmenu h2 a { font-family: "LeagueGothic"; text-transform: uppercase;}
+.foodmenu h2 a:hover {
+	background:#3d7f91;
+	color:#fff;
+}
+	a {
+	color: #3d7f91;
 	text-decoration: none;
 }
 a:hover {
-	color: #FF4D4D;
+	color: #3d7f91;
 }
 	.container {
 	margin: 0 auto;
@@ -543,13 +548,13 @@ nav * {
 	/*transition:none;*/
 }
 #menu-icon {
-	display: hidden; 
+	display: none; 
 	font-size:3em;
 	color:#983d97;
 }
 a:hover#menu-icon {
-	background-color: #444;
-	border-radius: 4px 4px 0 0;
+	/*background-color: #444;*/
+	/*border-radius: 4px 4px 0 0;*/
 }
 nav {
 	margin:  0 auto;
@@ -1275,6 +1280,9 @@ nav select {
 /*		Tablet Layout: 768px.  */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	/*#menu-icon {
+		display: inline-block;
+	}*/
 	.container {
 		width: 83.333%;
 		max-width:991px;
@@ -1321,6 +1329,11 @@ nav select {
 /*		Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
+
+	#menu-icon {
+		display: inline-block;
+	}
+
 	/* change grid3 to 2-column */
 	.grid2 .col {
 		width: 100%;
