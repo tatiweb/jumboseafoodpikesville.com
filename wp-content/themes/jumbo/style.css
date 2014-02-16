@@ -269,11 +269,11 @@ body {
 
 /************************ Selection colours (easy to forget) ************************/
 
-::selection 	 	{ background: rgb(255,255,158);}
-::-moz-selection 	{ background: rgb(255,255,158);}
+::selection 	 	{ background: #ead95e;}
+::-moz-selection 	{ background: #ead95e;}
 img::selection 		{ background: transparent;}
 img::-moz-selection	{ background: transparent;}
-body 				{-webkit-tap-highlight-color: rgb(255,255,158);}
+body 				{-webkit-tap-highlight-color: #ead95e;}
 
 
 
@@ -298,7 +298,7 @@ a {
 a:hover {
 	color: #FF4D4D;
 }
-.container {
+	.container {
 	margin: 0 auto;
 }
 
@@ -428,6 +428,9 @@ header h1.title span {
     right:10px;
     top:10px;
 }
+.oneThird .social {
+	position:relative;
+}
 .social li  {
     padding: 0 0 0 5px;
     float: left;
@@ -470,14 +473,20 @@ header h1.title span {
 /************************ Footer ************************/
 footer {
 	clear: both;
-	padding: 20px 0;
+	padding: 2em 0 1em;
+	min-height:190px;
 	overflow:hidden;
+	font-size:12px;
 	margin: 0 auto;
 	background: #282828;
 	border-top: solid 3px #983d97;
 	color: #fff;
 }
 
+footer .container {
+	/*width: 90.333%;*/
+	max-width:991px;
+}
 
 .footer_widgets{
 	/*padding:40px 0;*/
@@ -504,19 +513,19 @@ footer {
 
 .copyright {
 	font-family:"GothamBook";
-	background: #fff;
+	/*background: #282828;*/
 	clear: both;
 	padding: 20px 0;
 	text-align: center;
 	font-size: 12px;
 	margin: 0 auto;
-	color: #555;
+	color: #fff;
 }
-.copyright a {
+/*.copyright a {
 	color: #ccc;
 	border-bottom: 1px dotted #666;
 }
-
+*/
 /************************ Navigation ************************/
 .navigation {
 	font-size: 12px;
@@ -1249,10 +1258,19 @@ nav select {
       display: none;
 }
 
+/*@media only screen, print { 
+	.container {
+		margin:0 auto;
+		min-width: 200px;
+	}
+}*/
 /*		Tablet Layout: 768px.  */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+	.container {
+		width: 83.333%;
+		max-width:991px;
+	}
 	body {
 		
 	}
@@ -1291,7 +1309,7 @@ nav select {
 	}
 }
 
-.oneThird { float:left; text-align:center; width:33%; font-family:"GothamBook";}
+.oneThird { float:left; text-align:left; width:33%; font-family:"GothamBook";}
 /*		Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
