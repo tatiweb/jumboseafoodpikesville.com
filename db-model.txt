@@ -1,0 +1,13 @@
+menu_item
+---------
+pk_menu_item_id
+menu_item_name
+menu_item_description
+menu_item_price
+fk_cat_id
+fk_cat_name
+
+cat
+---
+pk_cat_id
+cat_name

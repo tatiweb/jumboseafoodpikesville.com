@@ -715,24 +715,23 @@ a.comment-reply-link {
 	margin: 20px auto;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: 'KirimomiGeometric',Sans-Serif;
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: bold;
 	text-shadow:1px 1px rgba(0,0,0, .5);
-	background: #D93600 url(img/bg_button.png) 50% 50% repeat-x;
+	background:grey;
+	/*background: #D93600 url(img/bg_button.png) 50% 50% repeat-x;*/
 	display: block;
 	width: 200px;
 	border:0;
 	padding: 10px 30px;
 	text-align: center;
-
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
 	-moz-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
 	box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
-	cursor: pointer;
+	font-family: "GothamBook"; cursor:pointer;
 }
 .submitbutton:hover,
 a.more-link:hover,
@@ -742,7 +741,7 @@ a.comment-reply-link {
 	-webkit-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	-moz-box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
 	box-shadow: 0px 0px 7px rgba(0,0,0, 0.3);
-	background-position: 50% 70%;
+	/*background-position: 50% 70%;*/
 	color: #fff;
 }
 
