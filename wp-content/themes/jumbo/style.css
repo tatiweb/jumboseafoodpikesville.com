@@ -500,7 +500,7 @@ footer {
 
 
 .footer_widgets{
-	padding:40px 0;
+	/*padding:40px 0;*/
 }
 .footer_widgets h3.widget-title{
 	font-size:20px;
@@ -528,7 +528,6 @@ footer {
 	clear: both;
 	padding: 20px 0;
 	text-align: center;
-	border-top: 5px solid ##D7D7D7;
 	font-size: 12px;
 	margin: 0 auto;
 	color: #555;
@@ -795,8 +794,8 @@ a.comment-reply-link {
 }
 
 
-#google-map {
-	
+.google-map {
+	border-bottom:solid 1px #999;
 }
 #map iframe {
 	height: 100%;
@@ -806,7 +805,7 @@ a.map-toggle {
 	-moz-border-radius: 5px 5px 0 0px;
 	border-radius: 5px 5px 0 0px;
 	border:1px solid #ccc;
-	border-bottom: 1px solid #fff;
+	/*border-bottom: 1px solid #999;*/
 	display: block;
 	margin: 0 auto;
 	width: 150px;
@@ -1707,3 +1706,5 @@ left: 0;
 width: 100% !important;
 height: 100% !important;
 }
+
+.oneHalf { float:left; text-align:center; width:50%; font-family:"GothamBook";}
