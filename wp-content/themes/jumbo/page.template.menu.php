@@ -44,7 +44,7 @@ if ( $category->parent > 0 ) {
 }
 
 $i = 0;
-echo '<h2 class="menu-title level-1">' . $category->name . '</h2>';
+echo '<div id="'. $category->name . '"><h2 class="menu-title level-1">' . $category->name . '</div></h2>';
 query_posts(
     array(
         'menus' => $category->slug,
