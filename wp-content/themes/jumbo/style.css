@@ -295,12 +295,8 @@ body {
     font-family: "GothamBook", sans-serif;
     font-size: 14px;
 }
-.fooditem a { font-family: "Futura"; color:#555; font-size:1.2em ; text-transform: uppercase;}
-.fooditem a:hover {
-	color:#3d7f91;
-	/*color:#fff;*/
-}
-	a {
+
+a {
 	color: #3d7f91;
 	text-decoration: none;
 }
@@ -889,6 +885,19 @@ img.blog-thumb {
 
 
 /************************ Menu Listing ************************/ 
+
+/**********************Category Navigation*********************/
+.foodcat ul li a { padding: 10px 5%; display: inline-block;  }
+.foodcat ul li { font-family: "Futura"; color:#555; font-size:1.2em ;  display:inline; /*border: solid 1px #999; border-radius:5px ;*/}
+
+.foodcat ul li:first-child { margin-left:0;  }
+.foodcat ul li:last-child { margin-right:0; }
+
+.foodcat a:hover {
+	background:#a2d756;
+	/*color:#fff;*/
+}
+
 .menulist {
 
 }
@@ -946,7 +955,7 @@ img.blog-thumb {
 .menu-item-price {
 	float: right;
 	/*font-size: 14px;*/
-	color: #E54D1B;
+	color: #333;
 }
 
 .menu-title {

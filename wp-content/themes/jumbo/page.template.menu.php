@@ -31,13 +31,13 @@ get_header(); ?>
 // get initial categories
 $categories = get_terms( 'menus', array( 'orderby' => 'name', 'order' => 'ASC', 'hierarchical'  => true, 'parent'=>0, 'hide_empty'    => false, ) );
 
-echo '<div class="fooditem">';
+echo '<div class="foodcat"><ul>';
 
 foreach ( $categories as $category ) {
-    echo '&bullet; <a href="#' . $category->name . '">' . $category->name . '</a> &nbsp;  &nbsp;'; //e.g. <div class="foodmenu"><h2><a href="#Appetizers">Appetizers</a> | <a href="#Chicken">Chicken</a></h2></div
+    echo '<li><a href="#' . $category->name . '">' . $category->name . '</a></li> &nbsp;&nbsp;'; //e.g. <div class="foodmenu"><h2><a href="#Appetizers">Appetizers</a> | <a href="#Chicken">Chicken</a></h2></div
 }
 
-echo '</div>';
+echo '</ul></div>';
 
 foreach ( $categories as $category ) {
 
