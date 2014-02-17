@@ -889,88 +889,91 @@ img.blog-thumb {
 
 }
 .menulist article {
+	float:left; width:45%; margin-right:4%;
 	border-bottom: 1px solid #f0f0f0;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
-	.menulist .post-title {
-		
-	}
+.menulist .post-title {
+	
+}
 
-	.menulist .post-thumb {
-		float:left;
-		width:60px;
-		margin-right: 20px;
-	}
-	.menulist .post-thumb img {
-		width: 100%;
-		height: auto;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-		/*-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
-		-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
-		box-shadow: 0 0 5px rgba(0,0,0,0.3);
-		padding: 5px;*/
-	}
-	.menulist .post-content {
-		margin:0;
-		padding:0;
-	}
-	.menulist .with-thumb .post-content {
-		margin-left:60px;
-		/*padding-right:20px;*/
-	}
-	.menulist .post-content p:last-child {
-		margin-bottom: 0;
-		padding-bottom: 0;
-	}
+.menulist .post-thumb {
+	float:left;
+	width:60px;
+	margin-right: 20px;
+}
+.menulist .post-thumb img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	/*-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	padding: 5px;*/
+}
+.menulist .post-content {
+	margin:0;
+	/*width:50%; float:left;*/
+	padding:0;
+}
+.menulist .with-thumb .post-content {
+	margin-left:60px;
+	/*padding-right:20px;*/
+}
+.menulist .post-content p:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
-	.menulist .menu-item-title {
-		font-size: 22px;
-		font-family:"GothamBook";
-		font-weight: 100;
-		margin-bottom: 0;
-	}
-	.menulist .menu-item-content {
-		padding-top: 10px;
-	}
+.menulist .menu-item-title {
+	font-size: 17px;
+	font-family:"GothamBook";
+	font-weight: 100;
+	margin-bottom: 0;
+}
+.menulist .menu-item-content {
+	padding-top: 10px;
+	/*float:left;width:50%;*/
+}
 
-	.menu-item-price {
-		float: right;
-		/*font-size: 14px;*/
-		color: #E54D1B;
-	}
+.menu-item-price {
+	float: right;
+	/*font-size: 14px;*/
+	color: #E54D1B;
+}
 
-	.menu-title {
-		font-family:"GothamBook";
-		text-align: center;
-		font-weight: 600;
-		font-size: 22px;
-		margin: 40px 0;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-	}
-	.menu-title:after, 
-	.menu-title:before {
-		content: " ~ "
-	}
+.menu-title {
+	font-family:"GothamBook";
+	text-align: center;
+	font-weight: 600;
+	font-size: 22px;
+	margin: 40px 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.menu-title:after, 
+.menu-title:before {
+	content: " ~ "
+}
 
 
-	.menu-category {
-		margin-bottom: 40px;
-	}
+.menu-category {
+	margin-bottom: 40px;
+}
 
-	.menu-category article:last-child {
-		/*border-bottom: none;*/
-	}
+.menu-category article:last-child {
+	/*border-bottom: none;*/
+}
 
-	.level-1 {
+.level-1 {
 
-	}
-	.level-2 {
-		font-size: 18px;
-	}
+}
+.level-2 {
+	font-size: 18px;
+}
 
 /************************ Sidebar & Widgets ************************/
 .widget_sidebar {
@@ -1333,7 +1336,9 @@ nav select {
 	#menu-icon {
 		display: inline-block;
 	}
-
+	.menulist article {
+		width:100%;
+	}
 	/* change grid3 to 2-column */
 	.grid2 .col {
 		width: 100%;

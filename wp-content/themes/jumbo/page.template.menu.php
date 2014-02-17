@@ -54,7 +54,6 @@ query_posts(
     )
 );
 
-
 if ( have_posts() ) : while (have_posts()): the_post(); global $post;
 
     // let's make sure that the post is not also in any of child categories, if it is, skip it ( we don't want to display it twice )
@@ -70,7 +69,6 @@ if ( have_posts() ) : while (have_posts()): the_post(); global $post;
     get_template_part( 'part.menuitem' );
     $i++;
 
-
 endwhile;
 //wp_reset_query();
 endif;
@@ -85,6 +83,7 @@ $categories2 = get_terms(
         'hierarchical'  => true,
     )
 );
+echo '<div style="clear:both"></div>';
 
 
 foreach ( $categories2 as $category ) {
