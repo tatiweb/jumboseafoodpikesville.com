@@ -96,11 +96,11 @@ q:before, q:after {
 }
 @font-face { 
     font-family:"Futura";
-    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.otf'); 
-    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.eot');
-    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.eot?#iefix') format('embedded-opentype'), 
-        url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.ttf') format('truetype'),
-        url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.svg#Futura') format('svg');
+    src:url('http://sudocoda.com/fonts/FuturaStd-Book.otf'); 
+    src:url('http://sudocoda.com/fonts/FuturaStd-Book.eot');
+    src:url('http://sudocoda.com/fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'), 
+        url('http://sudocoda.com/fonts/FuturaStd-Book.ttf') format('truetype'),
+        url('http://sudocoda.com/fonts/FuturaStd-Book.svg#Futura') format('svg');
 }
 :focus {
 	outline: 0;
