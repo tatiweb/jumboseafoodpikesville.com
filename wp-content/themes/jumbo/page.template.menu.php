@@ -34,7 +34,7 @@ $categories = get_terms( 'menus', array( 'orderby' => 'name', 'order' => 'ASC', 
 echo '<div class="fooditem">';
 
 foreach ( $categories as $category ) {
-    echo '&bullet; <a href="#' . $category->name . '">' . $category->name . '</a> &nbsp; &bullet; &nbsp;'; //e.g. <div class="foodmenu"><h2><a href="#Appetizers">Appetizers</a> | <a href="#Chicken">Chicken</a></h2></div
+    echo '&bullet; <a href="#' . $category->name . '">' . $category->name . '</a> &nbsp;  &nbsp;'; //e.g. <div class="foodmenu"><h2><a href="#Appetizers">Appetizers</a> | <a href="#Chicken">Chicken</a></h2></div
 }
 
 echo '</div>';

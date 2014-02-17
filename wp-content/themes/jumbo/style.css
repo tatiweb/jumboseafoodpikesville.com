@@ -94,10 +94,14 @@ q:before, q:after {
         url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.ttf') format('truetype'),
         url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.svg#GothamBoldItalic') format('svg');
 }
-/*@font-face {
-	font-family:"Futura";
-	src: url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.ttf');
-*/}
+@font-face { 
+    font-family:"Futura";
+    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.otf'); 
+    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.eot');
+    src:url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.eot?#iefix') format('embedded-opentype'), 
+        url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.ttf') format('truetype'),
+        url('http://www.saratogawire.com/media/css/fonts/futura/FuturaStd-Book.svg#Futura') format('svg');
+}
 :focus {
 	outline: 0;
 }
@@ -291,18 +295,18 @@ body {
     font-family: "GothamBook", sans-serif;
     font-size: 14px;
 }
-.foodmenu h2 a { font-family: "LeagueGothic"; text-transform: uppercase;}
-.foodmenu h2 a:hover {
-	background:#3d7f91;
-	color:#fff;
+.fooditem a { font-family: "Futura"; color:#555; font-size:1.2em ; text-transform: uppercase;}
+.fooditem a:hover {
+	color:#3d7f91;
+	/*color:#fff;*/
 }
 	a {
 	color: #3d7f91;
 	text-decoration: none;
 }
-a:hover {
-	color: #3d7f91;
-}
+/*a:hover {
+	color: #555;
+}*/
 	.container {
 	margin: 0 auto;
 }
@@ -930,7 +934,7 @@ img.blog-thumb {
 
 .menulist .menu-item-title {
 	font-size: 17px;
-	font-family:"GothamBook";
+	font-family:"Futura", sans-serif;
 	font-weight: 100;
 	margin-bottom: 0;
 }
