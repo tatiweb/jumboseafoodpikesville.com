@@ -13,13 +13,12 @@
   <div class="hours">M: Closed<br>Tu-Th: 11:30AM-10:00PM<br>Fr&Sa: 11:30AM-10:30PM<br>Su: 12:00PM-10:00PM
 </div><br/>
 	
-					<ul class="social">
-						<?php if (of_get_option('facebook') !='' ) { ?><li><a href="<?php echo of_get_option('facebook');?>" class="facebook" title="<?php _e( 'Facebook', 'site5framework' ); ?>"><?php _e( 'Facebook', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('twitter') !='' ) { ?><li><a href="<?php echo of_get_option('twitter');?>" class="twitter" title="<?php _e( 'Twitter', 'site5framework' ); ?>"><?php _e( 'Twitter', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('youtube') !='' ) { ?><li><a href="<?php echo of_get_option('youtube');?>" class="youtube" title="<?php _e( 'Youtube', 'site5framework' ); ?>"><?php _e( 'Youtube', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('gplus') !='' ) { ?><li><a href="<?php echo of_get_option('gplus');?>" class="gplus" title="<?php _e( 'Google+', 'site5framework' ); ?>"><?php _e( 'Google+', 'site5framework' ); ?></a></li><?php } ?>
-						<?php if (of_get_option('skype') !='' ) { ?><li><a href="<?php echo of_get_option('skype');?>" class="skype" title="<?php _e( 'Skype', 'site5framework' ); ?>"><?php _e( 'Skype', 'site5framework' ); ?></a></li><?php } ?>
-					</ul>
+		<ul class="social">
+			<li><a href="http://www.facebook.com/pages/Jumbo-Seafood/111466698894138" class="facebook" title="<?php _e( 'Facebook', 'site5framework' ); ?>"><?php _e( 'Facebook', 'site5framework' ); ?></a></li><?php } ?>
+			<li><a href="http://plus.google.com/115671432646571840384" title="<?php _e( 'Twitter', 'site5framework' ); ?>"><?php _e( 'Twitter', 'site5framework' ); ?></a></li><?php } ?>
+			<li><a href="http://www.yelp.com/biz/jumbo-seafood-chinese-restaurant-pikesville" class="youtube" title="<?php _e( 'Youtube', 'site5framework' ); ?>"><?php _e( 'Youtube', 'site5framework' ); ?></a></li><?php } ?>
+			<li><a href="http://www.urbanspoon.com/r/31/351510/restaurant/Baltimore/Jumbo-Seafood-Chinese-Pikesville" class="gplus" title="<?php _e( 'Google+', 'site5framework' ); ?>"><?php _e( 'Google+', 'site5framework' ); ?></a></li><?php } ?>
+		</ul>
 				<?php } ?>
 <!-- <div class="social">
 	<a href="http://www.facebook.com/pages/Jumbo-Seafood/111466698894138"><img src="/jumboseafoodpikesville.com/wp-content/images/facebook.jpg"/></a>

@@ -853,7 +853,10 @@ a.map-toggle .hide {
 
 
 /************************ Page and Post ************************/
-
+/*No title on Home*/
+.post-28 h2.post-title {
+	display:none; 
+}
 h2.post-title {
 	text-align: left;
 	font-size: 50px;
@@ -887,14 +890,14 @@ img.blog-thumb {
 /************************ Menu Listing ************************/ 
 
 /**********************Category Navigation*********************/
-.foodcat ul li a { padding: 10px 5%; display: inline-block;  }
-.foodcat ul li { font-family: "Futura"; color:#555; font-size:1.2em ;  display:inline; /*border: solid 1px #999; border-radius:5px ;*/}
+.foodcat ul li a { padding: 10px 1%; display: inline-block;  }
+.foodcat ul li { font-family: "LeagueGothic"; text-transform:uppercase; color:#555; font-size:1.8em ;  display:inline; /*border: solid 1px #999; border-radius:5px ;*/}
 
 .foodcat ul li:first-child { margin-left:0;  }
 .foodcat ul li:last-child { margin-right:0; }
 
 .foodcat a:hover {
-	background:#a2d756;
+	/*background:#a2d756;*/ background:#f4f4f4;
 	/*color:#fff;*/
 }
 
