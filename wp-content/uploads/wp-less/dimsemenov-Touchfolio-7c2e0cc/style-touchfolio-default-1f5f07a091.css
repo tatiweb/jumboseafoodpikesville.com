@@ -63,8 +63,6 @@ a, a:link, a:visited, a:active, a:focus {
   text-decoration:none;
   outline:none;
   -webkit-transition:all .14s ease-in-out;
-  -moz-transition:all .14s ease-in-out;
-  -o-transition:all .14s ease-in-out;
   transition:all .14s ease-in-out;
   -webkit-tap-highlight-color:rgba(0,0,0,0.1);
 }
@@ -72,6 +70,12 @@ a:hover {
   color:#9a3c9a;
   text-decoration: underline;
   /*background:rgba(204,0,0,0.05);*/
+}
+/*a:focus { outline:thin dotted; }*/
+/*a:hover, a:active { outline:0; }*/
+::-moz-selection, ::-moz-selection {
+  background:#9a3c9a;
+  color:#fff;
 }
 /*a:focus { outline:thin dotted; }*/
 /*a:hover, a:active { outline:0; }*/
@@ -129,8 +133,6 @@ pre {
   line-height:1.2em;
 }
 input[type="submit"], button, .button {
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
   border-radius:4px;
   color:#fff;
   font-family: "Futura", HelveticaNeue, Helvetica, sans-serif;
@@ -144,8 +146,6 @@ input[type="submit"], button, .button {
   text-decoration:none;
   border:0;
   -webkit-transition:background-color 0.3s ease-in-out;
-  -moz-transition:background-color 0.3s ease-in-out;
-  -o-transition:background-color 0.3s ease-in-out;
   transition:background-color 0.3s ease-in-out;
 }
 input[type="submit"]:hover, button:hover, .button:hover { background:#555450; }
@@ -205,13 +205,9 @@ form input, form textarea {
   display:block;
   cursor:pointer !important;
   background:#ffffff;
-  -webkit-border-radius:32px;
-  -moz-border-radius:32px;
   border-radius:32px;
   overflow:hidden;
   -webkit-transition:opacity .3s ease-in-out;
-  -moz-transition:opacity .3s ease-in-out;
-  -o-transition:opacity .3s ease-in-out;
   transition:opacity .3s ease-in-out;
 }
 .two-dim-slider .play-button .play-button-icon {
@@ -235,8 +231,6 @@ form input, form textarea {
   display:block;
   margin-left:0;
   -webkit-transition:all 0.3s cubic-bezier(0.235,0.640,0.565,1.000);
-  -moz-transition:all 0.3s cubic-bezier(0.235,0.640,0.565,1.000);
-  -o-transition:all 0.3s cubic-bezier(0.235,0.640,0.565,1.000);
   transition:all 0.3s cubic-bezier(0.235,0.640,0.565,1.000);
 }
 .two-dim-slider .back-to-list-button {
@@ -283,8 +277,6 @@ form input, form textarea {
   height:32px;
   position:relative;
   -webkit-transition:all .3s ease-in-out;
-  -moz-transition:all .3s ease-in-out;
-  -o-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
 }
 .two-dim-slider .close-button .close-icon {
@@ -340,8 +332,6 @@ form input, form textarea {
 .two-dim-slider .arrow-left a, .two-dim-slider .arrow-right a {
   -webkit-tap-highlight-color:rgba(0,0,0,0);
   -webkit-transition:none 0s ease-in-out;
-  -moz-transition:none 0s ease-in-out;
-  -o-transition:none 0s ease-in-out;
   transition:none 0s ease-in-out;
 }
 .two-dim-slider .arrow-left a:hover, .two-dim-slider .arrow-right a:hover {
@@ -368,8 +358,6 @@ form input, form textarea {
   line-height:18px;
   opacity:0;
   -webkit-transition:all .3s ease-in-out;
-  -moz-transition:all .3s ease-in-out;
-  -o-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
 }
 .two-dim-slider .arrow-right a .info-text {
@@ -407,8 +395,6 @@ form input, form textarea {
   background:url(img/touchfolio-sprite-default.png);
   background-color:#555;
   -webkit-transition:all .3s ease-in-out;
-  -moz-transition:all .3s ease-in-out;
-  -o-transition:all .3s ease-in-out;
   transition:all .3s ease-in-out;
 }
 .two-dim-slider .arrow-left.disabled-arrow .icon, .two-dim-slider .arrow-right.disabled-arrow .icon { opacity:0.2; }
@@ -441,8 +427,6 @@ form input, form textarea {
   float:right;
   padding:5px 8px 5px 12px;
   -webkit-transition:opacity .25s ease-in-out;
-  -moz-transition:opacity .25s ease-in-out;
-  -o-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
 }
 .two-dim-slider .slider-album-indicator .album-info-text.album-text-hidden { opacity:0; }
@@ -552,6 +536,7 @@ a.facebook-share-btn {
   -khtml-user-select:none;
   -webkit-user-select:none;
   -o-user-select:none;
+  -ms-user-select:none;
   user-select:none;
 }
 .action-notifier.action-notifier-visible { opacity:1; }
@@ -651,7 +636,6 @@ body.ds-gallery-page { background:#ffffff; }
 #commentform #author, #commentform #email, #commentform #url {
   width:100%;
   max-width:400px;
-  -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -o-box-sizing:border-box;
   box-sizing:border-box;
@@ -660,7 +644,6 @@ body.ds-gallery-page { background:#ffffff; }
   min-height:10em;
   max-width:100%;
   width:100%;
-  -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -o-box-sizing:border-box;
   box-sizing:border-box;
@@ -706,7 +689,6 @@ body.ds-gallery-page { background:#ffffff; }
 #respond {
   padding:.5em 2em;
   background:#f4f4f0;
-  -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -o-box-sizing:border-box;
   box-sizing:border-box;
@@ -745,7 +727,6 @@ html, body {
 }
 #main-wrap {
   height:100%;
-  -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   -o-box-sizing:border-box;
   box-sizing:border-box;
@@ -798,8 +779,6 @@ html, body {
   color:#333333;
   font-size:1.2em;
   -webkit-transition:all 0.15 ease;
-  -moz-transition:all 0.15 ease;
-  -o-transition:all 0.15 ease;
   transition:all 0.15 ease;
 }
 .menu li a:hover {
@@ -847,8 +826,6 @@ a.menu-button:hover {
   background:url(img/touchfolio-sprite-default.png) no-repeat;
   background-position:-170px -9px;
   -webkit-transition:background-position .3s ease-in-out;
-  -moz-transition:background-position .3s ease-in-out;
-  -o-transition:background-position .3s ease-in-out;
   transition:background-position .3s ease-in-out;
 }
 .mobile-menu {
@@ -908,8 +885,6 @@ a.menu-button:hover {
   background:none;
   display:block;
   -webkit-transition:opacity .3s ease-in-out;
-  -moz-transition:opacity .3s ease-in-out;
-  -o-transition:opacity .3s ease-in-out;
   transition:opacity .3s ease-in-out;
 }
 .logo a:hover {
@@ -980,8 +955,6 @@ a.menu-button:hover {
 .albums-thumbnails { width:768px; }
 .albums-thumbnails img {
   -webkit-transition:all .2s ease-in-out;
-  -moz-transition:all .2s ease-in-out;
-  -o-transition:all .2s ease-in-out;
   transition:all .2s ease-in-out;
   display:block;
   width:304px;
@@ -1008,8 +981,6 @@ a.menu-button:hover {
   border:0;
   margin-bottom:8px;
   -webkit-transition:none 0 ease-in-out;
-  -moz-transition:none 0 ease-in-out;
-  -o-transition:none 0 ease-in-out;
   transition:none 0 ease-in-out;
 }
 .albums-thumbnails a.project-thumb:hover {
@@ -1020,8 +991,6 @@ a.menu-button:hover {
   padding:7px;
   border:1px solid transparent;
   -webkit-transition:border .3s ease-in-out;
-  -moz-transition:border .3s ease-in-out;
-  -o-transition:border .3s ease-in-out;
   transition:border .3s ease-in-out;
 }
 .albums-thumbnails .project-thumb-inside:hover { border-color:#dddddd; }
@@ -1115,10 +1084,10 @@ a.menu-button:hover {
   float:right;
   margin-right:0;
   position:absolute;
-  height:53%;
+  height:50.888%;
   right:0;
   top:0;
-  background:transparent;
+  background:#fff;
   border: solid 1px #d7d7d7;
   box-shadow: 0px 5px 15px #555;
   border-bottom-right-radius: 5px;
@@ -1319,3 +1288,17 @@ h1.entry-title { color:#9a3c9a;}
 
 .social-bookmarks { text-align:center; margin:0 auto;}
 .rslides_tabs { background: #280353;}
+
+.fancy-gradient { background: #ebf1f6; /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* IE10+ */
+background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
+}
+.borders { -webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;}
