@@ -403,8 +403,9 @@ form input, form textarea {
   margin:8px 0 0 8px;
   width:32px;
   height:31px;
+  color:crimson;
   background:url(img/touchfolio-sprite-default.png);
-  background-color:#ffffff;
+  background-color:#555;
   -webkit-transition:all .3s ease-in-out;
   -moz-transition:all .3s ease-in-out;
   -o-transition:all .3s ease-in-out;
@@ -1113,10 +1114,13 @@ a.menu-button:hover {
   float:right;
   margin-right:0;
   position:absolute;
-  height:200px;
+  height:53%;
   right:0;
   top:0;
-  background:#ffffff;
+  background:transparent;
+  border: solid 1px #d7d7d7;
+  box-shadow: 0 0 10px #555;
+  border-radius:5px;
   padding:8px 0;
   overflow:hidden;
 }
@@ -1141,7 +1145,7 @@ a.menu-button:hover {
   overflow:hidden;
 }
 .collapsed-layout .main-header .site-description { display:none; }
-.collapsed-layout .main-header .menu-button  a:hover { text-decoration: none; }
+.collapsed-layout .main-header .menu-button:hover { text-decoration: none; }
 .collapsed-layout .main-header .menu-button {
   color:#9a3c9a;
   font-size:2em;
@@ -1306,7 +1310,7 @@ a.menu-button:hover {
 
 .oneThird { float:left; width:33%; }
 .post-28 h1.entry-title { display: none;}
-h1.entry-title { color:#280353;}
+h1.entry-title { color:#9a3c9a;}
 .menu li.current-menu-item>a { color:#9a3c9a; }
 
 #main { background:white; }
