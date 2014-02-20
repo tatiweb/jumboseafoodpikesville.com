@@ -1084,7 +1084,7 @@ a.menu-button:hover {
   float:right;
   margin-right:0;
   position:absolute;
-  height:50.888%;
+  height:41%;
   right:0;
   top:0;
   background:#fff;
@@ -1289,16 +1289,11 @@ h1.entry-title { color:#9a3c9a;}
 .social-bookmarks { text-align:center; margin:0 auto;}
 .rslides_tabs { background: #280353;}
 
-.fancy-gradient { background: #ebf1f6; /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* IE10+ */
-background: -webkit-linear-gradient(top, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #ebf1f6 0%,#abd3ee 50%,#89c3eb 51%,#d5ebfb 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#d5ebfb',GradientType=0 ); /* IE6-9 */
-}
 .borders { -webkit-border-top-left-radius: 5px;
 -webkit-border-top-right-radius: 5px;
 -moz-border-radius-topleft: 5px;
 -moz-border-radius-topright: 5px;
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;}
+
+.jiro { text-shadow: 1px 1px white, 2px 2px #9a3c9a;}
