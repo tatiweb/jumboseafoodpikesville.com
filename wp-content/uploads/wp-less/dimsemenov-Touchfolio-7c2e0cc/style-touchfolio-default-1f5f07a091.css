@@ -1,3 +1,4 @@
+/*3d729a powder blue, 4040fc*/
 @font-face { 
     font-family:"GothamBook";src:url('http://sudocoda.com/fonts/Gotham-Book.otf'); 
     src:url('http://sudocoda.com/fonts/gotham-book-webfont.eot');
@@ -59,7 +60,7 @@ body {
   line-height:1.6;
 }
 a, a:link, a:visited, a:active, a:focus {
-  color:#9a3c9a;
+  color:#40409c;
   text-decoration:none;
   outline:none;
   -webkit-transition:all .14s ease-in-out;
@@ -67,20 +68,20 @@ a, a:link, a:visited, a:active, a:focus {
   -webkit-tap-highlight-color:rgba(0,0,0,0.1);
 }
 a:hover {
-  color:#9a3c9a;
+  color:#3d729a;
   text-decoration: underline;
   /*background:rgba(204,0,0,0.05);*/
 }
 /*a:focus { outline:thin dotted; }*/
 /*a:hover, a:active { outline:0; }*/
 ::-moz-selection, ::-moz-selection {
-  background:#9a3c9a;
+  background:#3d729a;
   color:#fff;
 }
 /*a:focus { outline:thin dotted; }*/
 /*a:hover, a:active { outline:0; }*/
 ::-moz-selection, ::selection {
-  background:#9a3c9a;
+  background:#3d729a;
   color:#fff;
 }
 p a, li a, blockquote a, .text-block a {
@@ -740,17 +741,20 @@ html, body {
 .main-header {
   margin-left:-16em;
   position:relative;
-  border-right: solid 1px #f3f3f3;
+  border-right: solid 1px #bdd8ed;
   width:12em;
+  /*box-shadow: inset 0 0 15px #f7f7f7;*/
   padding:0 2em;
+  /*padding-bottom:100%;*/
   float:left;
+  height:500px;
   z-index:10;
 }
 .push {
   height:4.4em;
   clear:both;
 }
-#primary { padding:1.5em 2em; }
+#primary { padding:1.5em 2em; background: #fefefe; }
 #secondary {
   color:#3b3a37;
   float:left;
@@ -758,7 +762,7 @@ html, body {
 .menu {
   margin:5px 0 2px 0;
   font-weight:normal;
-  font-size:15px;
+  font-size:15px;position: absolute; left:0; top:330px ;
   line-height:20px;
 }
 .menu ul {
@@ -769,23 +773,32 @@ html, body {
 }
 .menu li {
   /*margin:0 0 4px;*/
+  width:131px;
   list-style:none;
+  padding:0;  
+  margin:0;
 }
-.menu a {
+.menu li a {
   display:block;
-  padding:15px 5px;
+  padding:15px 15px;
+  padding-left:32px;
+  /*padding-right:9px;*/
+  /*padding-left:30px;*/
+  width:208px;
+  /*padding-right:100px;*/
   text-decoration:none;
   border-bottom:none;
   color:#333333;
   font-size:1.2em;
-  -webkit-transition:all 0.15 ease;
-  transition:all 0.15 ease;
 }
 .menu li a:hover {
-  color:#9a3c9a;
+  color:#555; background:#f6f6f6; 
+  -webkit-transition: all 14s ease-in-out;
+  -moz-transition: all .14s ease-out;
+  transition:all .14s ease-out;
 }
 .menu li.important-item a { background:#afeef5; }
-.menu li.current-menu-item > a {  color:#9a3c9a; /* border-bottom: solid 1px #2B025B; */}
+.menu li.current-menu-item > a {  color:#3d729a; /* border-bottom: solid 1px #2B025B; */}
 .menu-sep {display:none; }
 .project-menu-sep { margin-bottom:5px; }
 #gallery-menu {
@@ -889,7 +902,7 @@ a.menu-button:hover {
   transition:opacity .3s ease-in-out;
 }
 .logo a:hover {
-  opacity:0.6;
+  opacity:0.7;
   background:none;
 }
 .logo img {
@@ -1009,8 +1022,31 @@ a.menu-button:hover {
   .main-header {
     width:10em;
     padding:0 1.5em;
+    padding-bottom: 100%;
     margin-left:-13em;
   }
+    /*.menu li  a { width:185px; }*/
+
+  .menu { top:275px;}
+  .menu li {
+  /*margin:0 0 4px;*/
+  list-style:none;
+  padding:0;  
+  margin:0;
+}
+.menu li a {
+  display:block;
+  padding:15px 15px;
+  padding-left:32px;
+  /*padding-right:9px;*/
+  /*padding-left:30px;*/
+  width:126px;
+  /*padding-right:100px;*/
+  text-decoration:none;
+  border-bottom:none;
+  color:#333333;
+  font-size:1.2em;
+}
   .footer-copy p {
     margin-left:14.8571428571em;
     padding-left:1.71428571429em;
@@ -1026,12 +1062,16 @@ a.menu-button:hover {
   }
   p img { max-width:100%; }
 }
+
 /*tablet*/
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1190px) and (max-width: 2560px) {
+  .menu li a { padding-right:63px; }
 }
 /*cell*/
-@media only screen and (max-width: 767px) {
-    .oneThird { float:left; clear:both; text-align:left; width:100%; margin-bottom:20px; }
+@media only screen and (min-width: 991px) {
+    /*.menu li  a { width:209px; }*/
+    .menu li  a { width:161px; }
+    /*.menu { margin-left:20px;}*/
 }
 
 /*    Wide Mobile Layout: 480px.   */
@@ -1044,7 +1084,7 @@ a.menu-button:hover {
   device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
-@media
+/*@media
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
 
@@ -1052,7 +1092,7 @@ a.menu-button:hover {
 
   }
 
-}
+}*/
 
 .page-template-ds-gallery-masonry-template-php.collapsed-layout #primary { padding:1em 1em 1.5em; }
 .page-template-ds-gallery-masonry-template-php.collapsed-layout .albums-thumbnails { margin:0 auto; }
@@ -1063,7 +1103,7 @@ a.menu-button:hover {
 }
 .collapsed-layout p img { max-width:100%; }
 .collapsed-layout .logo {
-  margin:0;
+  margin:-2px 0 0 0;
   width:140px;
   padding:0;
 }
@@ -1074,37 +1114,51 @@ a.menu-button:hover {
 .collapsed-layout .main-header {
   width:100%;
   position:relative;
-  padding:0;
+  padding-bottom: 0;
+  /*padding:0;*/
   border-bottom:solid 1px #d9d9d9;
   margin:0;
+  height:189px;
   box-shadow: inset 0 0 15px #d3d3d3;
   background:#ffffff;
 }
+/*.collapsed-layout .menu { position:absolute;}*/
 .collapsed-layout .main-header .menus-container {
-  clear:both;
+  /*clear:both;
   float:right;
   margin-right:0;
   position:absolute;
-  height:41%;
-  right:0;
-  top:0;
+  height:150px;border: solid 1px #555;
+  background:#fff;
+  border: solid 1px #d7d7d7;
+  box-shadow: 0px 5px 15px #555;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding:8px 0;*/
+  /*overflow:hidden;*/
+}
+.collapsed-layout .main-header .menu { margin:auto; position:absolute; 
+ clear:both;
+  float:right;
+  margin-right:0;right:0;top:189px;
+  position:absolute;width:200px;
+  height:80px;border: solid 1px #555;
   background:#fff;
   border: solid 1px #d7d7d7;
   box-shadow: 0px 5px 15px #555;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   padding:8px 0;
-  overflow:hidden;
-}
-.collapsed-layout .main-header .menu { margin:0 0 8px; }
+ }
 .collapsed-layout .main-header .menu li {
-  width:auto;
-  margin:0;
+  /*width:125px;*/
+  margin:0 0 0 0;
+  /*padding-right:80px;*/
 }
 .collapsed-layout .main-header .menu a {
-  width:100%;
+  width:137px;
   display:block;
-  padding:4px 16px 2px;
+  padding:4px 22px 2px 15px;
 }
 .collapsed-layout .main-header .menu a:hover {
   border-color:transparent;
@@ -1119,14 +1173,14 @@ a.menu-button:hover {
 .collapsed-layout .main-header .site-description { display:none; }
 .collapsed-layout .main-header .menu-button:hover { text-decoration: none; }
 .collapsed-layout .main-header .menu-button {
-  color:#9a3c9a;
+  color:#3d729a;
   background:url(img/threelines.png);
   font-size:2em;
   margin:45px 8px 13px 16px;
   float:right;
 }
 .collapsed-layout .menu-sep { display:none; }
-.collapsed-layout .oneThird { width:100%; clear:both; margin-bottom:15px; }
+.collapsed-layout .oneThird { width:100%; clear:both; margin-bottom:15px; padding-left:40px;}
 .collapsed-layout #main {
   width:100%;
   clear:both;
@@ -1254,8 +1308,11 @@ a.menu-button:hover {
 .collapsed-gallery-page .main-header .site-description { display:none; }
 @media only screen and (max-width: 620px) {
   .album-info-block { font-size:90%; }
+  /*.menu li { width: 183px; }*/
+  /*.ftr { float:left; clear:both; }*/
 }
 @media only screen and (max-width: 500px) {
+   .ftr { float:left; clear:both; }
   .album-info-block { font-size:85%; }
   .collapsed-layout #primary, .collapsed-layout #secondary .widget, .collapsed-layout .footer-copy p {
     padding-left:1em !important;
@@ -1279,17 +1336,23 @@ a.menu-button:hover {
   }
   .ds-gallery-page .album-info-block .info-container { padding-bottom:1em; }
 }
-.ftr { margin-left:20px; padding:2em 0 1em; border-top: 2px solid #280353; min-height: 190px; position: relative; bottom:0; }
-
-.oneThird { float:left; width:33%; }
+.ftr { bottom: 0;width:100%; text-shadow: 0 1px #fff; color:#555; position: absolute;  padding:2em .83em; border-top: 2px solid #40409c; min-height: 190px; position: relative; bottom:0; }
+.collapsed-layout .ftr { width:100%; bottom: 0; text-shadow: 0 1px #fff; color:#555; padding-top: 15px; padding-right: -57px; position: absolute;  border-top: 2px solid #40409c; min-height: 190px; position: relative; bottom:0; }
+.ftr a { color: #3d729a;}
+.oneThird { float:left; width:30%; margin-left:20px;}
 .post-28 h1.entry-title { display: none;}
-h1.entry-title { color:#9a3c9a;}
-.menu li.current-menu-item>a { color:#9a3c9a; }
+h1.entry-title { color:#666; text-shadow: 0 1px #fff;}
+.menu li.current-menu-item>a { /*background:#f3f3f3; */color:#97a69b; }
 
-#main { background:white; }
+#main { /*background:white; */
+  /*background:url(http://localhost:8888/jumboseafoodpikesville.com/wp-content/uploads/2012/10/IMG_2426.jpg) no-repeat;*/
+  background-size: 100%;
+  border-left: solid 1px #bdd8ed;
+  background-position: right;
+}
 
 .social-bookmarks { text-align:center; margin:0 auto;}
-.rslides_tabs { background: #280353;}
+.rslides_tabs { background: #fff;}
 
 .borders { -webkit-border-top-left-radius: 5px;
 -webkit-border-top-right-radius: 5px;
@@ -1298,4 +1361,5 @@ h1.entry-title { color:#9a3c9a;}
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;}
 
-.jiro { text-shadow: 1px 1px white, 2px 2px #9a3c9a;}
+.jiro { text-shadow: 1px 1px white, 2px 2px #3d729a;}
+html { overflow-x:hidden ;}
