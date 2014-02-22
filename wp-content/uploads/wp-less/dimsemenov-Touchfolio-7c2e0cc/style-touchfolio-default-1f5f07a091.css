@@ -800,6 +800,7 @@ html, body {
 }
 #gallery-menu li.current-album-menu-item a:hover { border-color:transparent; }
 a.menu-button {
+  background: url(/jumboseafoodpikesville.com/wp-content/themes/dimsemenov-Touchfolio-7c2e0cc/img/threelines.png) 100px 100px;
   display:inline-block;
   text-align:center;
   vertical-align:middle;
@@ -1119,6 +1120,7 @@ a.menu-button:hover {
 .collapsed-layout .main-header .menu-button:hover { text-decoration: none; }
 .collapsed-layout .main-header .menu-button {
   color:#9a3c9a;
+  background:url(img/threelines.png);
   font-size:2em;
   margin:45px 8px 13px 16px;
   float:right;
