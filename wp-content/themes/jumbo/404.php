@@ -10,8 +10,8 @@
 	<div id="primary" class="site-content">
 		<div class="container">
 		<section class="main block grid4">
-					<h1>404</h1>
-					<p><?php _e('The page you were looking for cannot be found.', ''); ?></p>
+					<h1>Page not found</h1>
+					<p><?php _e('We\'re sorry, but the page you were looking for cannot be found. Please make sure the URL you were looking for was typed correctly and that it exists.', ''); ?></p>
 				</section>
 		</div>
 	</div>
