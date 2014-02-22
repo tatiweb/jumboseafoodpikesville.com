@@ -78,7 +78,7 @@ q:before, q:after {
     font-weight: normal;
     font-style: normal;
 }
-@font-face { 
+/*@font-face { 
     font-family:"GothamBook";src:url('http://sudocoda.com/fonts/Gotham-Book.otf'); 
     src:url('http://sudocoda.com/fonts/gotham-book-webfont.eot');
     src:url('http://sudocoda.com/fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'), 
@@ -93,7 +93,7 @@ q:before, q:after {
     src:url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), 
         url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.ttf') format('truetype'),
         url('http://sudocoda.com/fonts/gotham-bolditalic-webfont.svg#GothamBoldItalic') format('svg');
-}
+}*/
 @font-face { 
     font-family:"Futura";
     src:url('http://sudocoda.com/fonts/FuturaStd-Book.otf'); 
@@ -246,7 +246,7 @@ a img {border: 0;}
 }
 
 body {
-	font: 16px "GothamBook", sans;
+	font: 16px "Futura", sans;
 	line-height: 1.5;
 }
 
@@ -292,7 +292,7 @@ body {
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 	margin: 0 auto;
 	color: #666666;
-    font-family: "GothamBook", sans-serif;
+    font-family: "Futura", sans-serif;
     font-size: 14px;
 }
 
@@ -517,7 +517,7 @@ footer .container {
 }
 
 .copyright {
-	font-family:"GothamBook";
+	font-family:"Futura";
 	/*background: #282828;*/
 	clear: both;
 	padding: 20px 0;
@@ -573,7 +573,7 @@ nav ul li {
 nav ul li a {
 	padding: 8px 0;
 	color: #333;
-	font-family:"GothamBook";
+	font-family:"Futura";
 	text-decoration: none;
 	transition: all .14s ease-in-out;
 	-webkit-transition: all .14s ease-in-out;
@@ -644,7 +644,7 @@ ul.sub-menu li ul {
 
 ul.subnav {
 	font-weight: bold;
-	font-family: "GothamBook", Helvetica, Sans-Serif;
+	font-family: "Futura", Helvetica, Sans-Serif;
 	padding-top: 20px;
 	margin-bottom: 20px;
 }
@@ -739,7 +739,7 @@ a.comment-reply-link {
 	-webkit-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
 	-moz-box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
 	box-shadow: 0px 0px 5px rgba(0,0,0, 0.3);
-	font-family: "GothamBook"; cursor:pointer;
+	font-family: "Futura"; cursor:pointer;
 }
 .submitbutton:hover,
 a.more-link:hover,
@@ -862,8 +862,8 @@ h2.post-title {
 	font-size: 50px;
 	font-weight: 100;
 	margin:0 auto 50px;
-	color: #983d97;
-	font-family:"GothamBook";
+	color: #983d97; text-transform: uppercase;
+	font-family:"Futura";
 }
 
 .meta,
@@ -962,7 +962,7 @@ img.blog-thumb {
 }
 
 .menu-title {
-	font-family:"GothamBook";
+	font-family:"Futura";
 	text-align: center;
 	font-weight: 600;
 	font-size: 22px;
@@ -972,7 +972,7 @@ img.blog-thumb {
 }
 .menu-title:after, 
 .menu-title:before {
-	content: " ~ "
+	content: " - "
 }
 
 
@@ -1057,7 +1057,7 @@ section.main .post {
 	margin:0 auto;
 }
 section.main p {	color:#666666;	font-size:14px;
-	font-family:"GothamBook";
+	font-family:"Futura";
 	padding-bottom: 20px;
 }
 section.main .post p em {
@@ -1344,7 +1344,7 @@ nav select {
 	}
 }
 
-.oneThird { float:left; text-align:left; width:33%; font-family:"GothamBook";}
+.oneThird { float:left; text-align:left; width:33%; font-family:"Futura";}
 /*		Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
@@ -1441,7 +1441,7 @@ nav select {
 	    width: 100%;
 	    border: 1px solid #ccc;
 	    color: #666; padding:5px;
-	    font-family: 'GothamBook', Helvetica, sans-serif;
+	    font-family: 'Futura', Helvetica, sans-serif;
 	    font-size: 12px;
     } 
 	
