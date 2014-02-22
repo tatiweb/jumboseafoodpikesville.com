@@ -63,6 +63,7 @@
 			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
 		</section>
 		<div class="menus-container">
+			<span class="menu-sep">&mdash;</span>
 			<nav id="main-menu" class="menu">
 			<?php 
 			if ( has_nav_menu( 'primary' ) ) {
@@ -78,6 +79,19 @@
 				<p><?php _e('Primary menu is not selected and/or created. Please go to "Appearance &rarr; Menus" and setup menu.' ,'dsframework'); ?></p>
 			<?php } ?>
 			</nav>
+			<span class="menu-sep">&mdash;</span>
+			<?php if ( has_nav_menu( 'social' ) ) { ?>
+				<nav class="social-menu menu">
+					<?php
+					echo wp_nav_menu( array( 
+						'theme_location' => 'social',
+						'container'      => false,
+						'container_class' => '',
+						'menu_class' => false
+					));
+					?>
+				</nav>
+			<?php }	?>
 		</div>
 	</header>
 	<div id="main">

@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
 			} 
 
 			var headerHeight = _headerSideMenu.height();
-			mobileMenu = $('<a class="menu-button"><img src="/jumboseafoodpikesville.com/wp-content/themes/dimsemenov-Touchfolio-7c2e0cc/img/threelines.png" width=100/></a>');
+			mobileMenu = $('<a class="menu-button"><i class="menu-button-icon"></i>menu</a>');
 			$('.top-logo-group').after(mobileMenu);
 			
 			setTimeout(function() {

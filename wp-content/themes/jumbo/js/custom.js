@@ -21,7 +21,7 @@ jQuery(document).ready(function($){
 	});
 
 	/********** jquery responsive dropdown menu **********/
-    $("a#menu-icon").appendTo("nav");
+    $("<select />").appendTo("nav");
       $("<option />", {
          "selected": "selected",
          "value"   : "",

@@ -11,6 +11,10 @@ get_header(); ?>
 <!-- begin main -->
 <section class="main menulist block grid4 clearfix">
 	
+	
+
+
+
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<header>
@@ -31,13 +35,6 @@ get_header(); ?>
 // get initial categories
 $categories = get_terms( 'menus', array( 'orderby' => 'name', 'order' => 'ASC', 'hierarchical'  => true, 'parent'=>0, 'hide_empty'    => false, ) );
 
-echo '<div class="foodcat"><ul>';
-
-foreach ( $categories as $category ) {
-    echo '<li><a href="#' . $category->name . '">' . $category->name . '</a></li> &nbsp;&nbsp;'; //e.g. <div class="foodmenu"><h2><a href="#Appetizers">Appetizers</a> | <a href="#Chicken">Chicken</a></h2></div
-}
-
-echo '</ul></div>';
 
 foreach ( $categories as $category ) {
 
@@ -47,7 +44,6 @@ if ( $category->parent > 0 ) {
 }
 
 $i = 0;
-
 echo '<div id="'. $category->name . '"><h2 class="menu-title level-1">' . $category->name . '</div></h2>';
 query_posts(
     array(
@@ -57,6 +53,7 @@ query_posts(
         'posts_per_page' => -1
     )
 );
+
 
 if ( have_posts() ) : while (have_posts()): the_post(); global $post;
 
@@ -73,6 +70,7 @@ if ( have_posts() ) : while (have_posts()): the_post(); global $post;
     get_template_part( 'part.menuitem' );
     $i++;
 
+
 endwhile;
 //wp_reset_query();
 endif;
@@ -87,7 +85,6 @@ $categories2 = get_terms(
         'hierarchical'  => true,
     )
 );
-echo '<div style="clear:both"></div>';
 
 
 foreach ( $categories2 as $category ) {

@@ -10,7 +10,7 @@
 	<div id="primary" class="site-content">
 		<div class="container">
 		<section class="main block grid4">
-					<h1>We're sorry</h1>
+					<h1>404</h1>
 					<p><?php _e('The page you were looking for cannot be found.', ''); ?></p>
 				</section>
 		</div>

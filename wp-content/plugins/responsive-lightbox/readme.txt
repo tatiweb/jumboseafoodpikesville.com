@@ -4,7 +4,7 @@ Donate link: http://www.dfactory.eu/
 Tags: gallery, images, lightbox, links, photos, template, theme, photo, image, picture, slideshow, modal, overlay, YouTube, Vimeo, video, videos
 Requires at least: 3.3
 Tested up to: 3.8.1
-Stable tag: 1.3.5
+Stable tag: 1.3.4
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -31,7 +31,6 @@ For more information, check out plugin page at [dFactory](http://www.dfactory.eu
 = Translations: =
 
 * Czech - by Vaclav Hnilicka
-* Dutch - by [Sebas Blom](http://www.basbva.nl/)
 * French - by [Li-An](http://www.echodesplugins.li-an.fr/)
 * German - by [Andreas Reitberger](http://wdbase.de)
 * Japanese - by stranger-jp
@@ -57,9 +56,6 @@ No questions yet.
 2. screenshot-2.jpg
 
 == Changelog ==
-
-= 1.3.5 =
-* New: Dutch translation, thanks to [Sebas Blom](http://www.basbva.nl/)
 
 = 1.3.4 =
 * Fix: Gallery images displayed as single images
@@ -131,5 +127,5 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.3.5 =
-* New: Dutch translation, thanks to [Sebas Blom](http://www.basbva.nl/)
+= 1.3.4 =
+* Fix: Gallery images displayed as single images
